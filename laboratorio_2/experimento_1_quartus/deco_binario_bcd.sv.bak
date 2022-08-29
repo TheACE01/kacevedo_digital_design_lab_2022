@@ -1,0 +1,12 @@
+module deco_binario_bcd (A3, A2, A1, A0, S4, S3, S2, S1, S0);
+
+  input logic A3, A2, A1, A0;
+  output logic S4, S3, S2, S1, S0;
+  
+  assign S4 = (A3 & A2) | (A3 & A1);
+  assign S3 = (A3 & ~A2 & ~A1);
+  assign S2 = (~A3 & A2) | (A2 & A1);
+  assign S1 = (A3 & A2 & ~A1) | (~A3 & A1);
+  assign S0 = A0;
+  
+endmodule
