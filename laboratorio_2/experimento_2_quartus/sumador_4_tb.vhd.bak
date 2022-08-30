@@ -1,0 +1,53 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity sumador_4_tb is
+end entity;
+
+architecture tb of sumador_4_tb is
+
+component sumador_4 is
+port(
+	A, B: in STD_LOGIC_VECTOR(3 DOWNTO 0);
+	Cin: in STD_LOGIC;
+	Cout: out STD_LOGIC;
+	S: out STD_LOGIC_VECTOR(3 DOWNTO 0));
+end component;
+
+signal A, B, S: STD_LOGIC_VECTOR(3 DOWNTO 0);
+signal Cin, Cout: STD_LOGIC;
+
+begin
+
+sumador : sumador_4 port map(A => A, B => B, Cin => Cin, Cout => Cout, S => S);
+
+stim : process 
+begin
+
+A(0) <= '0';
+A(1) <= '1';
+A(2) <= '1';
+A(3) <= '1';
+B(0) <= '0';
+B(1) <= '0';
+B(2) <= '0';
+B(3) <= '1';
+Cin <= '0';
+wait for 10 ns;
+
+
+A(0) <= '0';
+A(1) <= '1';
+A(2) <= '1';
+A(3) <= '1';
+
+B(0) <= '0';
+B(1) <= '0';
+B(2) <= '0';
+B(3) <= '1';
+Cin <= '0';
+wait for 10 ns;
+wait;
+
+end process;
+end tb;

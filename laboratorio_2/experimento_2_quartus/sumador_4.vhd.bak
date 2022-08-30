@@ -1,0 +1,31 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity sumador_4 is
+port(
+	A, B: in STD_LOGIC_VECTOR(3 DOWNTO 0);
+	Cin: in STD_LOGIC;
+	Cout: out STD_LOGIC;
+	S: out STD_LOGIC_VECTOR(3 DOWNTO 0));
+end sumador_4;
+
+architecture structural of sumador_4 is
+
+component full_adder is
+port(
+	FA, FB, Cin: in STD_LOGIC;
+	FS, Cout: out STD_LOGIC);
+end component;
+
+
+signal S0, S1, S2: STD_LOGIC;
+
+begin
+U1: half_adder port map(A => FA, B => FB, S => S0, C => S1);
+U2: half_adder port map(A => S0, B => Cin, S => FS, C => S2);
+U3: orgate port map(X => S2, Y => S1, Z => Cout);
+end structural;
+
+

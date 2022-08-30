@@ -1,0 +1,307 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/simulation/modelsim
+Edecodificador
+Z1 w1661833939
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z6 8C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/decodificador.vhd
+Z7 FC:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/decodificador.vhd
+l0
+L14
+VKaJBd_bU<]jMFg8C@kZj_2
+!s100 oNUJ3eZb;]6nD0?88`Tdz3
+Z8 OV;C;10.5b;63
+31
+Z9 !s110 1661834257
+!i10b 1
+Z10 !s108 1661834257.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/decodificador.vhd|
+Z12 !s107 C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/decodificador.vhd|
+!i113 1
+Z13 o-93 -work work
+Z14 tExplicit 1 CvgOpt 0
+Adataflow
+R2
+R3
+R4
+R5
+DEx4 work 13 decodificador 0 22 KaJBd_bU<]jMFg8C@kZj_2
+l22
+L21
+V3i=H2ZEhB3J_BaSXUV4]@3
+!s100 HOUY88@lb5f[DQDnK00f:0
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Efull_adder
+Z15 w1661832984
+R2
+R3
+R4
+R5
+R0
+Z16 8C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/full_adder.vhd
+Z17 FC:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/full_adder.vhd
+l0
+L14
+VDSWTm8M_BTT20_aLLBAc^1
+!s100 K1RMmRGk5LVMiSfAVQZ]b0
+R8
+31
+Z18 !s110 1661834256
+!i10b 1
+Z19 !s108 1661834256.000000
+Z20 !s90 -reportprogress|300|-93|-work|work|C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/full_adder.vhd|
+Z21 !s107 C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/full_adder.vhd|
+!i113 1
+R13
+R14
+Astructural
+R2
+R3
+R4
+R5
+DEx4 work 10 full_adder 0 22 DSWTm8M_BTT20_aLLBAc^1
+l40
+L21
+V@>:LUnfE;jmD?zKnRNRNR2
+!s100 V9nmz3dl9UDK?^9k77F5G3
+R8
+31
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 1
+R13
+R14
+Ehalf_adder
+R15
+R2
+R3
+R4
+R5
+R0
+Z22 8C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/half_adder.vhd
+Z23 FC:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/half_adder.vhd
+l0
+L14
+Vnh2E02:bMVakSL5K2<JfD2
+!s100 ZhR[6Gmk4HNZjNKS=Ij?h3
+R8
+31
+R18
+!i10b 1
+R19
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/half_adder.vhd|
+Z25 !s107 C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/half_adder.vhd|
+!i113 1
+R13
+R14
+Adataflow
+R2
+R3
+R4
+R5
+DEx4 work 10 half_adder 0 22 nh2E02:bMVakSL5K2<JfD2
+l22
+L21
+V]6zZO4bOzGb?LG]M]ni412
+!s100 io@hHX>abAJdhS4h[:hh22
+R8
+31
+R18
+!i10b 1
+R19
+R24
+R25
+!i113 1
+R13
+R14
+Eorgate
+R15
+R2
+R3
+R4
+R5
+R0
+Z26 8C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/orgate.vhd
+Z27 FC:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/orgate.vhd
+l0
+L14
+VcWeD2X]Ek:VITjN>=jNCB2
+!s100 7a]EVWUR=3ZAa8D^mme>m3
+R8
+31
+R18
+!i10b 1
+R19
+Z28 !s90 -reportprogress|300|-93|-work|work|C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/orgate.vhd|
+Z29 !s107 C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/orgate.vhd|
+!i113 1
+R13
+R14
+Adataflow
+R2
+R3
+R4
+R5
+DEx4 work 6 orgate 0 22 cWeD2X]Ek:VITjN>=jNCB2
+l22
+L21
+V]klU>c4N;>dXI:d<hY^jC0
+!s100 QAoPO@n^KbJZmTRb?n>zc3
+R8
+31
+R18
+!i10b 1
+R19
+R28
+R29
+!i113 1
+R13
+R14
+Esumador_4
+R15
+R2
+R3
+R4
+R5
+R0
+Z30 8C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_4.vhd
+Z31 FC:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_4.vhd
+l0
+L14
+V<VDCYI2ZB60KiRd<;mh=20
+!s100 ]igMe]XdJ9X@I=l_W8Km>1
+R8
+31
+R9
+!i10b 1
+R10
+Z32 !s90 -reportprogress|300|-93|-work|work|C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_4.vhd|
+Z33 !s107 C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_4.vhd|
+!i113 1
+R13
+R14
+Astructural
+R2
+R3
+R4
+R5
+DEx4 work 9 sumador_4 0 22 <VDCYI2ZB60KiRd<;mh=20
+l35
+L23
+VI`B`nhb`L=jZkHb5WRlX<1
+!s100 9ZhfG>g^8D?iK^3:8bIcX1
+R8
+31
+R9
+!i10b 1
+R10
+R32
+R33
+!i113 1
+R13
+R14
+Esumador_deco_4
+R15
+R2
+R3
+R4
+R5
+R0
+Z34 8C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_deco_4.vhd
+Z35 FC:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_deco_4.vhd
+l0
+L14
+V`cf8kk@4c9Q^30N^nMHg22
+!s100 I;DLbd>Yc=fain[@l=9Yf1
+R8
+31
+R9
+!i10b 1
+R10
+Z36 !s90 -reportprogress|300|-93|-work|work|C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_deco_4.vhd|
+Z37 !s107 C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_deco_4.vhd|
+!i113 1
+R13
+R14
+Astructural
+R2
+R3
+R4
+R5
+DEx4 work 14 sumador_deco_4 0 22 `cf8kk@4c9Q^30N^nMHg22
+l44
+L23
+V1kH`QWhX6HKFA4RikYbJi3
+!s100 6=@JWZ1ZUPf2Y6DEjN5d?3
+R8
+31
+R9
+!i10b 1
+R10
+R36
+R37
+!i113 1
+R13
+R14
+Esumador_deco_4_tb
+R15
+R4
+R5
+R0
+Z38 8C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_deco_4_tb.vhd
+Z39 FC:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_deco_4_tb.vhd
+l0
+L4
+VUSYW7_UVJgoT^ace3a_A30
+!s100 M91maGI_CbZ3[Oi_GPRAJ1
+R8
+31
+R9
+!i10b 1
+R10
+Z40 !s90 -reportprogress|300|-93|-work|work|C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_deco_4_tb.vhd|
+Z41 !s107 C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_deco_4_tb.vhd|
+!i113 1
+R13
+R14
+Atb
+R4
+R5
+DEx4 work 17 sumador_deco_4_tb 0 22 USYW7_UVJgoT^ace3a_A30
+l21
+L7
+V:3@k@X<XkW@Aeb>Jo@O`?0
+!s100 neEQfJIa[Knfm[dbo7_n]3
+R8
+31
+R9
+!i10b 1
+R10
+R40
+R41
+!i113 1
+R13
+R14
