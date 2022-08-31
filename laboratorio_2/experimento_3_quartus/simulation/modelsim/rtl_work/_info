@@ -1,0 +1,98 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/kfaceved/Downloads/Experimento3_Quartus/simulation/modelsim
+vcontador_display_6
+Z1 !s110 1661913138
+!i10b 1
+!s100 aA4jf1Ge`7DYLiMz_CN1?0
+IdZIgSX_`eWmVn9zD2ZzE?1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1661912127
+8C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_display_6.v
+FC:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_display_6.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1661913137.000000
+!s107 C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_display_6.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/kfaceved/Downloads/Experimento3_Quartus|C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_display_6.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/kfaceved/Downloads/Experimento3_Quartus
+Z7 tCvgOpt 0
+vcontador_display_6_tb
+R1
+!i10b 1
+!s100 o02RhM6<dVNiR6QVkncQM1
+I:g7Go7PRAUUI4mVz4]S@b3
+R2
+R0
+w1661911389
+8C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_display_6_tb.v
+FC:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_display_6_tb.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1661913138.000000
+!s107 C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_display_6_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/kfaceved/Downloads/Experimento3_Quartus|C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_display_6_tb.v|
+!i113 1
+R5
+R6
+R7
+vcontador_regresivo
+Z8 !s110 1661913137
+!i10b 1
+!s100 ?l5G_9D;flid[oSj_UZ:13
+IA?I^8``I9fgXbQ7@nMnMN1
+R2
+R0
+w1661910453
+8C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_regresivo.v
+FC:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_regresivo.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_regresivo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/kfaceved/Downloads/Experimento3_Quartus|C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_regresivo.v|
+!i113 1
+R5
+R6
+R7
+vdisplay_hex
+R8
+!i10b 1
+!s100 JZM5aIL@NL`=3_KYmAdnO2
+I0FaYHX7<41cejDP]N=E5U1
+R2
+R0
+w1661913030
+8C:/Users/kfaceved/Downloads/Experimento3_Quartus/display_hex.v
+FC:/Users/kfaceved/Downloads/Experimento3_Quartus/display_hex.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/kfaceved/Downloads/Experimento3_Quartus/display_hex.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/kfaceved/Downloads/Experimento3_Quartus|C:/Users/kfaceved/Downloads/Experimento3_Quartus/display_hex.v|
+!i113 1
+R5
+R6
+R7

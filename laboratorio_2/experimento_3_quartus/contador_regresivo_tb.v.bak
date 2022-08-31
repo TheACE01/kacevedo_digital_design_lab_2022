@@ -1,0 +1,31 @@
+`timescale 1ps / 1ps // Unidad de tiempo / resolución
+module contador_regresivo_tb;
+
+// Inputs
+reg clk, rst;
+reg [2:0] start;
+
+// Output
+wire [2:0] count;
+
+// Instance of the Unit Under Test (UUD)
+contador_regresivo uut(
+	.clk(clk),
+	.rst(rst),
+	.start(start),
+	.count(count)
+);
+
+// Todo lo que esté dentro se ejecuta línea por línea
+initial begin
+	clk = 0;
+	rst = 0;
+	start = 3;
+	# 100
+	rst = 1;
+	#100
+	rst = 0;
+end
+	always #10 clk = ~clk; // Every 10 time units
+
+endmodule
