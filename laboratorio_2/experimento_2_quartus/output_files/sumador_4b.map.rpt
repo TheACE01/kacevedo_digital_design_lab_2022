@@ -1,5 +1,5 @@
 Analysis & Synthesis report for sumador_4b
-Mon Aug 29 22:51:02 2022
+Fri Sep 02 12:13:29 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Aug 29 22:51:02 2022       ;
+; Analysis & Synthesis Status     ; Successful - Fri Sep 02 12:13:28 2022       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; sumador_4b                                  ;
 ; Top-level Entity Name           ; sumador_deco_4                              ;
@@ -154,8 +154,8 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -165,18 +165,18 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                           ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                                                                    ; Library ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; half_adder.vhd                   ; yes             ; User VHDL File  ; C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/half_adder.vhd     ;         ;
-; orgate.vhd                       ; yes             ; User VHDL File  ; C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/orgate.vhd         ;         ;
-; full_adder.vhd                   ; yes             ; User VHDL File  ; C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/full_adder.vhd     ;         ;
-; sumador_4.vhd                    ; yes             ; User VHDL File  ; C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_4.vhd      ;         ;
-; decodificador.vhd                ; yes             ; User VHDL File  ; C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/decodificador.vhd  ;         ;
-; sumador_deco_4.vhd               ; yes             ; User VHDL File  ; C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_deco_4.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                      ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                                               ; Library ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; half_adder.vhd                   ; yes             ; User VHDL File  ; C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/half_adder.vhd     ;         ;
+; orgate.vhd                       ; yes             ; User VHDL File  ; C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/orgate.vhd         ;         ;
+; full_adder.vhd                   ; yes             ; User VHDL File  ; C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/full_adder.vhd     ;         ;
+; sumador_4.vhd                    ; yes             ; User VHDL File  ; C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_4.vhd      ;         ;
+; decodificador.vhd                ; yes             ; User VHDL File  ; C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/decodificador.vhd  ;         ;
+; sumador_deco_4.vhd               ; yes             ; User VHDL File  ; C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_deco_4.vhd ;         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------------------------------------+
@@ -274,46 +274,46 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Aug 29 22:50:45 2022
+    Info: Processing started: Fri Sep 02 12:13:03 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sumador_4b -c sumador_4b
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file half_adder.vhd
-    Info (12022): Found design unit 1: Half_Adder-dataflow File: C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/half_adder.vhd Line: 21
-    Info (12023): Found entity 1: half_adder File: C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/half_adder.vhd Line: 14
+    Info (12022): Found design unit 1: Half_Adder-dataflow File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/half_adder.vhd Line: 21
+    Info (12023): Found entity 1: half_adder File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/half_adder.vhd Line: 14
 Info (12021): Found 2 design units, including 1 entities, in source file orgate.vhd
-    Info (12022): Found design unit 1: orgate-dataflow File: C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/orgate.vhd Line: 21
-    Info (12023): Found entity 1: orgate File: C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/orgate.vhd Line: 14
+    Info (12022): Found design unit 1: orgate-dataflow File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/orgate.vhd Line: 21
+    Info (12023): Found entity 1: orgate File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/orgate.vhd Line: 14
 Info (12021): Found 2 design units, including 1 entities, in source file full_adder.vhd
-    Info (12022): Found design unit 1: full_Adder-structural File: C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/full_adder.vhd Line: 21
-    Info (12023): Found entity 1: full_adder File: C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/full_adder.vhd Line: 14
+    Info (12022): Found design unit 1: full_Adder-structural File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/full_adder.vhd Line: 21
+    Info (12023): Found entity 1: full_adder File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/full_adder.vhd Line: 14
 Info (12021): Found 2 design units, including 1 entities, in source file full_adder_tb.vhd
-    Info (12022): Found design unit 1: full_adder_tb-tb File: C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/full_adder_tb.vhd Line: 7
-    Info (12023): Found entity 1: full_adder_tb File: C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/full_adder_tb.vhd Line: 4
+    Info (12022): Found design unit 1: full_adder_tb-tb File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/full_adder_tb.vhd Line: 7
+    Info (12023): Found entity 1: full_adder_tb File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/full_adder_tb.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file sumador_4.vhd
-    Info (12022): Found design unit 1: sumador_4-structural File: C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_4.vhd Line: 23
-    Info (12023): Found entity 1: sumador_4 File: C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_4.vhd Line: 14
+    Info (12022): Found design unit 1: sumador_4-structural File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_4.vhd Line: 23
+    Info (12023): Found entity 1: sumador_4 File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_4.vhd Line: 14
 Info (12021): Found 2 design units, including 1 entities, in source file sumador_4_tb.vhd
-    Info (12022): Found design unit 1: sumador_4_tb-tb File: C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_4_tb.vhd Line: 7
-    Info (12023): Found entity 1: sumador_4_tb File: C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_4_tb.vhd Line: 4
+    Info (12022): Found design unit 1: sumador_4_tb-tb File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_4_tb.vhd Line: 7
+    Info (12023): Found entity 1: sumador_4_tb File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_4_tb.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file decodificador.vhd
-    Info (12022): Found design unit 1: decodificador-dataflow File: C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/decodificador.vhd Line: 21
-    Info (12023): Found entity 1: decodificador File: C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/decodificador.vhd Line: 14
+    Info (12022): Found design unit 1: decodificador-dataflow File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/decodificador.vhd Line: 21
+    Info (12023): Found entity 1: decodificador File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/decodificador.vhd Line: 14
 Info (12021): Found 2 design units, including 1 entities, in source file decodificador_tb.vhd
-    Info (12022): Found design unit 1: decodificador_tb-tb File: C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/decodificador_tb.vhd Line: 7
-    Info (12023): Found entity 1: decodificador_tb File: C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/decodificador_tb.vhd Line: 4
+    Info (12022): Found design unit 1: decodificador_tb-tb File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/decodificador_tb.vhd Line: 7
+    Info (12023): Found entity 1: decodificador_tb File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/decodificador_tb.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file sumador_deco_4.vhd
-    Info (12022): Found design unit 1: sumador_deco_4-structural File: C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_deco_4.vhd Line: 23
-    Info (12023): Found entity 1: sumador_deco_4 File: C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_deco_4.vhd Line: 14
+    Info (12022): Found design unit 1: sumador_deco_4-structural File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_deco_4.vhd Line: 23
+    Info (12023): Found entity 1: sumador_deco_4 File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_deco_4.vhd Line: 14
 Info (12021): Found 2 design units, including 1 entities, in source file sumador_deco_4_tb.vhd
-    Info (12022): Found design unit 1: sumador_deco_4_tb-tb File: C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_deco_4_tb.vhd Line: 7
-    Info (12023): Found entity 1: sumador_deco_4_tb File: C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_deco_4_tb.vhd Line: 4
+    Info (12022): Found design unit 1: sumador_deco_4_tb-tb File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_deco_4_tb.vhd Line: 7
+    Info (12023): Found entity 1: sumador_deco_4_tb File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_deco_4_tb.vhd Line: 4
 Info (12127): Elaborating entity "sumador_deco_4" for the top level hierarchy
-Info (12128): Elaborating entity "sumador_4" for hierarchy "sumador_4:sumador" File: C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_deco_4.vhd Line: 48
-Info (12128): Elaborating entity "full_adder" for hierarchy "sumador_4:sumador|full_adder:FA0" File: C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_4.vhd Line: 41
-Info (12128): Elaborating entity "half_adder" for hierarchy "sumador_4:sumador|full_adder:FA0|half_adder:U1" File: C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/full_adder.vhd Line: 42
-Info (12128): Elaborating entity "orgate" for hierarchy "sumador_4:sumador|full_adder:FA0|orgate:U3" File: C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/full_adder.vhd Line: 44
-Info (12128): Elaborating entity "decodificador" for hierarchy "decodificador:deco" File: C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_deco_4.vhd Line: 49
+Info (12128): Elaborating entity "sumador_4" for hierarchy "sumador_4:sumador" File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_deco_4.vhd Line: 48
+Info (12128): Elaborating entity "full_adder" for hierarchy "sumador_4:sumador|full_adder:FA0" File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_4.vhd Line: 41
+Info (12128): Elaborating entity "half_adder" for hierarchy "sumador_4:sumador|full_adder:FA0|half_adder:U1" File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/full_adder.vhd Line: 42
+Info (12128): Elaborating entity "orgate" for hierarchy "sumador_4:sumador|full_adder:FA0|orgate:U3" File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/full_adder.vhd Line: 44
+Info (12128): Elaborating entity "decodificador" for hierarchy "decodificador:deco" File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_2_quartus/sumador_deco_4.vhd Line: 49
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -322,9 +322,9 @@ Info (21057): Implemented 29 device resources after synthesis - the final resour
     Info (21059): Implemented 8 output pins
     Info (21061): Implemented 12 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4851 megabytes
-    Info: Processing ended: Mon Aug 29 22:51:02 2022
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:35
+    Info: Peak virtual memory: 4852 megabytes
+    Info: Processing ended: Fri Sep 02 12:13:29 2022
+    Info: Elapsed time: 00:00:26
+    Info: Total CPU time (on all processors): 00:00:40
 
 

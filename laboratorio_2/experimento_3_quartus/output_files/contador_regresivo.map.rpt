@@ -1,5 +1,5 @@
-Analysis & Synthesis report for contador_regresivo
-Tue Aug 30 21:58:24 2022
+Analysis & Elaboration report for contador_regresivo
+Wed Sep 07 22:24:14 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -7,21 +7,11 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Inverted Register Statistics
- 10. Parameter Settings for User Entity Instance: Top-level Entity: |contador_display_6
- 11. Parameter Settings for User Entity Instance: contador_regresivo:contador
- 12. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0
- 13. Parameter Settings for Inferred Entity Instance: lpm_divide:Div0
- 14. Post-Synthesis Netlist Statistics for Top Partition
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: Top-level Entity: |contador_regresivo
+  5. Analysis & Elaboration Settings
+  6. Analysis & Elaboration Messages
 
 
 
@@ -44,36 +34,57 @@ refer to the applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Aug 30 21:58:24 2022       ;
-; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name                   ; contador_regresivo                          ;
-; Top-level Entity Name           ; contador_display_6                          ;
-; Family                          ; Cyclone V                                   ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 6                                           ;
-; Total pins                      ; 16                                          ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
-+---------------------------------+---------------------------------------------+
++-----------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                              ;
++-------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Wed Sep 07 22:24:14 2022       ;
+; Quartus Prime Version         ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                 ; contador_regresivo                          ;
+; Top-level Entity Name         ; contador_regresivo                          ;
+; Family                        ; Cyclone V                                   ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
+; Total registers               ; N/A until Partition Merge                   ;
+; Total pins                    ; N/A until Partition Merge                   ;
+; Total virtual pins            ; N/A until Partition Merge                   ;
+; Total block memory bits       ; N/A until Partition Merge                   ;
+; Total PLLs                    ; N/A until Partition Merge                   ;
+; Total DLLs                    ; N/A until Partition Merge                   ;
++-------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |contador_regresivo ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; N              ; 3     ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                             ;
+; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; contador_display_6 ; contador_regresivo ;
+; Top-level entity name                                                           ; contador_regresivo ; contador_regresivo ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -154,303 +165,40 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
-+----------------------------+-------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                    ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                ; Library ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------+---------+
-; contador_regresivo.v             ; yes             ; User Verilog HDL File        ; C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_regresivo.v       ;         ;
-; display_hex.v                    ; yes             ; User Verilog HDL File        ; C:/Users/kfaceved/Downloads/Experimento3_Quartus/display_hex.v              ;         ;
-; contador_display_6.v             ; yes             ; User Verilog HDL File        ; C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_display_6.v       ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_divide.tdf       ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/abs_divider.inc      ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sign_div_unsign.inc  ;         ;
-; aglobal181.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc       ;         ;
-; db/lpm_divide_62m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/kfaceved/Downloads/Experimento3_Quartus/db/lpm_divide_62m.tdf      ;         ;
-; db/sign_div_unsign_9kh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/kfaceved/Downloads/Experimento3_Quartus/db/sign_div_unsign_9kh.tdf ;         ;
-; db/alt_u_div_ose.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/kfaceved/Downloads/Experimento3_Quartus/db/alt_u_div_ose.tdf       ;         ;
-; db/lpm_divide_3am.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/kfaceved/Downloads/Experimento3_Quartus/db/lpm_divide_3am.tdf      ;         ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------+---------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                                                                                                             ;
-+---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
-; Resource                                    ; Usage                                                                                                                     ;
-+---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 42                                                                                                                        ;
-;                                             ;                                                                                                                           ;
-; Combinational ALUT usage for logic          ; 78                                                                                                                        ;
-;     -- 7 input functions                    ; 0                                                                                                                         ;
-;     -- 6 input functions                    ; 6                                                                                                                         ;
-;     -- 5 input functions                    ; 3                                                                                                                         ;
-;     -- 4 input functions                    ; 9                                                                                                                         ;
-;     -- <=3 input functions                  ; 60                                                                                                                        ;
-;                                             ;                                                                                                                           ;
-; Dedicated logic registers                   ; 6                                                                                                                         ;
-;                                             ;                                                                                                                           ;
-; I/O pins                                    ; 16                                                                                                                        ;
-;                                             ;                                                                                                                           ;
-; Total DSP Blocks                            ; 0                                                                                                                         ;
-;                                             ;                                                                                                                           ;
-; Maximum fan-out node                        ; lpm_divide:Div0|lpm_divide_3am:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_ose:divider|add_sub_3_result_int[4]~1 ;
-; Maximum fan-out                             ; 16                                                                                                                        ;
-; Total fan-out                               ; 276                                                                                                                       ;
-; Average fan-out                             ; 2.38                                                                                                                      ;
-+---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                        ;
-+----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                 ; Entity Name         ; Library Name ;
-+----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |contador_display_6                    ; 78 (0)              ; 6 (0)                     ; 0                 ; 0          ; 16   ; 0            ; |contador_display_6                                                                                                 ; contador_display_6  ; work         ;
-;    |contador_regresivo:contador|       ; 6 (6)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |contador_display_6|contador_regresivo:contador                                                                     ; contador_regresivo  ; work         ;
-;    |display_hex:seg0|                  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |contador_display_6|display_hex:seg0                                                                                ; display_hex         ; work         ;
-;    |display_hex:seg1|                  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |contador_display_6|display_hex:seg1                                                                                ; display_hex         ; work         ;
-;    |lpm_divide:Div0|                   ; 27 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |contador_display_6|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
-;       |lpm_divide_3am:auto_generated|  ; 27 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |contador_display_6|lpm_divide:Div0|lpm_divide_3am:auto_generated                                                   ; lpm_divide_3am      ; work         ;
-;          |sign_div_unsign_9kh:divider| ; 27 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |contador_display_6|lpm_divide:Div0|lpm_divide_3am:auto_generated|sign_div_unsign_9kh:divider                       ; sign_div_unsign_9kh ; work         ;
-;             |alt_u_div_ose:divider|    ; 27 (27)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |contador_display_6|lpm_divide:Div0|lpm_divide_3am:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_ose:divider ; alt_u_div_ose       ; work         ;
-;    |lpm_divide:Mod0|                   ; 31 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |contador_display_6|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
-;       |lpm_divide_62m:auto_generated|  ; 31 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |contador_display_6|lpm_divide:Mod0|lpm_divide_62m:auto_generated                                                   ; lpm_divide_62m      ; work         ;
-;          |sign_div_unsign_9kh:divider| ; 31 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |contador_display_6|lpm_divide:Mod0|lpm_divide_62m:auto_generated|sign_div_unsign_9kh:divider                       ; sign_div_unsign_9kh ; work         ;
-;             |alt_u_div_ose:divider|    ; 31 (31)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |contador_display_6|lpm_divide:Mod0|lpm_divide_62m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_ose:divider ; alt_u_div_ose       ; work         ;
-+----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 6     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 6     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+--------------------------------------------------+
-; Inverted Register Statistics                     ;
-+----------------------------------------+---------+
-; Inverted Register                      ; Fan out ;
-+----------------------------------------+---------+
-; contador_regresivo:contador|count[0]   ; 9       ;
-; contador_regresivo:contador|count[1]   ; 11      ;
-; contador_regresivo:contador|count[2]   ; 12      ;
-; contador_regresivo:contador|count[3]   ; 11      ;
-; contador_regresivo:contador|count[5]   ; 10      ;
-; contador_regresivo:contador|count[4]   ; 12      ;
-; Total number of inverted registers = 6 ;         ;
-+----------------------------------------+---------+
-
-
-+------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |contador_display_6 ;
-+----------------+-------+-----------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                      ;
-+----------------+-------+-----------------------------------------------------------+
-; N              ; 6     ; Signed Integer                                            ;
-+----------------+-------+-----------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: contador_regresivo:contador ;
-+----------------+-------+-------------------------------------------------+
-; Parameter Name ; Value ; Type                                            ;
-+----------------+-------+-------------------------------------------------+
-; N              ; 6     ; Signed Integer                                  ;
-+----------------+-------+-------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0 ;
-+------------------------+----------------+------------------------+
-; Parameter Name         ; Value          ; Type                   ;
-+------------------------+----------------+------------------------+
-; LPM_WIDTHN             ; 6              ; Untyped                ;
-; LPM_WIDTHD             ; 4              ; Untyped                ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_PIPELINE           ; 0              ; Untyped                ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
-; CBXI_PARAMETER         ; lpm_divide_62m ; Untyped                ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
-+------------------------+----------------+------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: lpm_divide:Div0 ;
-+------------------------+----------------+------------------------+
-; Parameter Name         ; Value          ; Type                   ;
-+------------------------+----------------+------------------------+
-; LPM_WIDTHN             ; 6              ; Untyped                ;
-; LPM_WIDTHD             ; 4              ; Untyped                ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_PIPELINE           ; 0              ; Untyped                ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
-; CBXI_PARAMETER         ; lpm_divide_3am ; Untyped                ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
-+------------------------+----------------+------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_ff             ; 6                           ;
-;     CLR               ; 6                           ;
-; arriav_lcell_comb     ; 80                          ;
-;     arith             ; 28                          ;
-;         0 data inputs ; 8                           ;
-;         1 data inputs ; 4                           ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 10                          ;
-;         4 data inputs ; 2                           ;
-;     normal            ; 42                          ;
-;         1 data inputs ; 2                           ;
-;         2 data inputs ; 13                          ;
-;         3 data inputs ; 11                          ;
-;         4 data inputs ; 7                           ;
-;         5 data inputs ; 3                           ;
-;         6 data inputs ; 6                           ;
-;     shared            ; 10                          ;
-;         0 data inputs ; 2                           ;
-;         1 data inputs ; 8                           ;
-; boundary_port         ; 16                          ;
-;                       ;                             ;
-; Max LUT depth         ; 8.10                        ;
-; Average LUT depth     ; 6.49                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:01     ;
-+----------------+--------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
+Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Aug 30 21:58:11 2022
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off contador_regresivo -c contador_regresivo
+    Info: Processing started: Wed Sep 07 22:23:59 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off contador_regresivo -c contador_regresivo --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file contador_regresivo.v
-    Info (12023): Found entity 1: contador_regresivo File: C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_regresivo.v Line: 3
+    Info (12023): Found entity 1: contador_regresivo File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_3_quartus/contador_regresivo.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file contador_regresivo_tb.v
-    Info (12023): Found entity 1: contador_regresivo_tb File: C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_regresivo_tb.v Line: 2
+    Info (12023): Found entity 1: contador_regresivo_tb File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_3_quartus/contador_regresivo_tb.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file contador_regresivo_2_tb.v
-    Info (12023): Found entity 1: contador_regresivo_2_tb File: C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_regresivo_2_tb.v Line: 2
+    Info (12023): Found entity 1: contador_regresivo_2_tb File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_3_quartus/contador_regresivo_2_tb.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file contador_regresivo_4_tb.v
-    Info (12023): Found entity 1: contador_regresivo_4_tb File: C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_regresivo_4_tb.v Line: 2
+    Info (12023): Found entity 1: contador_regresivo_4_tb File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_3_quartus/contador_regresivo_4_tb.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file contador_regresivo_6_tb.v
-    Info (12023): Found entity 1: contador_regresivo_6_tb File: C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_regresivo_6_tb.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file hex_7seg.v
-    Info (12023): Found entity 1: hex_7seg File: C:/Users/kfaceved/Downloads/Experimento3_Quartus/hex_7seg.v Line: 1
+    Info (12023): Found entity 1: contador_regresivo_6_tb File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_3_quartus/contador_regresivo_6_tb.v Line: 2
+Warning (12019): Can't analyze file -- file hex_7seg.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file display_hex.v
-    Info (12023): Found entity 1: display_hex File: C:/Users/kfaceved/Downloads/Experimento3_Quartus/display_hex.v Line: 1
+    Info (12023): Found entity 1: display_hex File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_3_quartus/display_hex.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file contador_display_6.v
-    Info (12023): Found entity 1: contador_display_6 File: C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_display_6.v Line: 1
+    Info (12023): Found entity 1: contador_display_6 File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_3_quartus/contador_display_6.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file contador_display_6_tb.v
-    Info (12023): Found entity 1: contador_display_6_tb File: C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_display_6_tb.v Line: 2
-Info (12127): Elaborating entity "contador_display_6" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at contador_display_6.v(15): truncated value with size 32 to match size of target (4) File: C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_display_6.v Line: 15
-Warning (10230): Verilog HDL assignment warning at contador_display_6.v(16): truncated value with size 32 to match size of target (4) File: C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_display_6.v Line: 16
-Info (12128): Elaborating entity "contador_regresivo" for hierarchy "contador_regresivo:contador" File: C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_display_6.v Line: 13
-Warning (10230): Verilog HDL assignment warning at contador_regresivo.v(11): truncated value with size 32 to match size of target (6) File: C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_regresivo.v Line: 11
-Warning (10230): Verilog HDL assignment warning at contador_regresivo.v(14): truncated value with size 32 to match size of target (6) File: C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_regresivo.v Line: 14
-Info (12128): Elaborating entity "display_hex" for hierarchy "display_hex:seg0" File: C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_display_6.v Line: 23
-Info (278001): Inferred 2 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0" File: C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_display_6.v Line: 15
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_display_6.v Line: 16
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod0" File: C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_display_6.v Line: 15
-Info (12133): Instantiated megafunction "lpm_divide:Mod0" with the following parameter: File: C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_display_6.v Line: 15
-    Info (12134): Parameter "LPM_WIDTHN" = "6"
-    Info (12134): Parameter "LPM_WIDTHD" = "4"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_62m.tdf
-    Info (12023): Found entity 1: lpm_divide_62m File: C:/Users/kfaceved/Downloads/Experimento3_Quartus/db/lpm_divide_62m.tdf Line: 24
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_9kh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_9kh File: C:/Users/kfaceved/Downloads/Experimento3_Quartus/db/sign_div_unsign_9kh.tdf Line: 24
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_ose.tdf
-    Info (12023): Found entity 1: alt_u_div_ose File: C:/Users/kfaceved/Downloads/Experimento3_Quartus/db/alt_u_div_ose.tdf Line: 22
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0" File: C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_display_6.v Line: 16
-Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter: File: C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_display_6.v Line: 16
-    Info (12134): Parameter "LPM_WIDTHN" = "6"
-    Info (12134): Parameter "LPM_WIDTHD" = "4"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_3am.tdf
-    Info (12023): Found entity 1: lpm_divide_3am File: C:/Users/kfaceved/Downloads/Experimento3_Quartus/db/lpm_divide_3am.tdf Line: 24
-Info (286030): Timing-Driven Synthesis is running
-Critical Warning (18061): Ignored Power-Up Level option on the following registers
-    Critical Warning (18010): Register contador_regresivo:contador|count[0] will power up to High File: C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_regresivo.v Line: 13
-    Critical Warning (18010): Register contador_regresivo:contador|count[1] will power up to High File: C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_regresivo.v Line: 13
-    Critical Warning (18010): Register contador_regresivo:contador|count[2] will power up to High File: C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_regresivo.v Line: 13
-    Critical Warning (18010): Register contador_regresivo:contador|count[3] will power up to High File: C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_regresivo.v Line: 13
-    Critical Warning (18010): Register contador_regresivo:contador|count[5] will power up to High File: C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_regresivo.v Line: 13
-    Critical Warning (18010): Register contador_regresivo:contador|count[4] will power up to High File: C:/Users/kfaceved/Downloads/Experimento3_Quartus/contador_regresivo.v Line: 13
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 94 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 14 output pins
-    Info (21061): Implemented 78 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 4852 megabytes
-    Info: Processing ended: Tue Aug 30 21:58:24 2022
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:27
+    Info (12023): Found entity 1: contador_display_6_tb File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_3_quartus/contador_display_6_tb.v Line: 2
+Info (12127): Elaborating entity "contador_regresivo" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at contador_regresivo.v(11): truncated value with size 32 to match size of target (3) File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_3_quartus/contador_regresivo.v Line: 11
+Warning (10230): Verilog HDL assignment warning at contador_regresivo.v(14): truncated value with size 32 to match size of target (3) File: C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_3_quartus/contador_regresivo.v Line: 14
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4770 megabytes
+    Info: Processing ended: Wed Sep 07 22:24:14 2022
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:33
 
 

@@ -6,7 +6,7 @@ JedecChain;
 	P ActionCode(Ign)
 		Device PartName(SOCVHPS) MfrSpec(OpMask(0));
 	P ActionCode(Cfg)
-		Device PartName(5CSEMA5F31) Path("C:/Users/kfaceved/OneDrive - Intel Corporation/Desktop/TEC/Repositorios/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_1_quartus/output_files/") File("deco_binario_bcd.sof") MfrSpec(OpMask(1));
+		Device PartName(5CSEMA5F31) Path("C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_2/experimento_1_quartus/output_files/") File("deco_binario_bcd.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

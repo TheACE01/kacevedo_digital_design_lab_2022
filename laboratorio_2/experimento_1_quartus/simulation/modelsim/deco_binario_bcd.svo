@@ -16,7 +16,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
-// DATE "08/29/2022 19:07:00"
+// DATE "09/02/2022 13:18:25"
 
 // 
 // Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -40,17 +40,17 @@ module binario_display (
 	E,
 	F,
 	G);
-input 	A3;
-input 	A2;
-input 	A1;
-input 	A0;
-output 	A;
-output 	B;
-output 	C;
-output 	D;
-output 	E;
-output 	F;
-output 	G;
+input 	logic A3 ;
+input 	logic A2 ;
+input 	logic A1 ;
+input 	logic A0 ;
+output 	logic A ;
+output 	logic B ;
+output 	logic C ;
+output 	logic D ;
+output 	logic E ;
+output 	logic F ;
+output 	logic G ;
 
 // Design Ports Information
 // A	=>  Location: PIN_AE26,	 I/O Standard: 2.5 V,	 Current Strength: Default

@@ -1,68 +1,12 @@
-|contador_display_6
-clk => clk.IN1
-rst => rst.IN1
-S0[0] << display_hex:seg0.S
-S0[1] << display_hex:seg0.S
-S0[2] << display_hex:seg0.S
-S0[3] << display_hex:seg0.S
-S0[4] << display_hex:seg0.S
-S0[5] << display_hex:seg0.S
-S0[6] << display_hex:seg0.S
-S1[0] << display_hex:seg1.S
-S1[1] << display_hex:seg1.S
-S1[2] << display_hex:seg1.S
-S1[3] << display_hex:seg1.S
-S1[4] << display_hex:seg1.S
-S1[5] << display_hex:seg1.S
-S1[6] << display_hex:seg1.S
-
-
-|contador_display_6|contador_regresivo:contador
+|contador_regresivo
 clk => count[0]~reg0.CLK
 clk => count[1]~reg0.CLK
 clk => count[2]~reg0.CLK
-clk => count[3]~reg0.CLK
-clk => count[4]~reg0.CLK
-clk => count[5]~reg0.CLK
 rst => count[0]~reg0.PRESET
 rst => count[1]~reg0.PRESET
 rst => count[2]~reg0.PRESET
-rst => count[3]~reg0.PRESET
-rst => count[4]~reg0.PRESET
-rst => count[5]~reg0.PRESET
-count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-count[2] <= count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-count[3] <= count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-count[4] <= count[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-count[5] <= count[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|contador_display_6|display_hex:seg0
-A3 => Decoder0.IN0
-A2 => Decoder0.IN1
-A1 => Decoder0.IN2
-A0 => Decoder0.IN3
-S[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
-S[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
-S[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
-S[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
-S[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
-S[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
-S[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|contador_display_6|display_hex:seg1
-A3 => Decoder0.IN0
-A2 => Decoder0.IN1
-A1 => Decoder0.IN2
-A0 => Decoder0.IN3
-S[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
-S[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
-S[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
-S[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
-S[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
-S[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
-S[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+count[0] << count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[1] << count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[2] << count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
