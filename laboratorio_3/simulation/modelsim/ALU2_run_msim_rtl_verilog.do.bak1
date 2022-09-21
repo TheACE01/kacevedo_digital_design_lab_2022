@@ -5,6 +5,8 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
+vlog -sv -work work +incdir+C:/Users/kevin\ Avevedo/Desktop/ALU {C:/Users/kevin Avevedo/Desktop/ALU/display_hex.sv}
+vlog -sv -work work +incdir+C:/Users/kevin\ Avevedo/Desktop/ALU {C:/Users/kevin Avevedo/Desktop/ALU/ALU_FPGA.sv}
 vlog -sv -work work +incdir+C:/Users/kevin\ Avevedo/Desktop/ALU {C:/Users/kevin Avevedo/Desktop/ALU/shift_right.sv}
 vlog -sv -work work +incdir+C:/Users/kevin\ Avevedo/Desktop/ALU {C:/Users/kevin Avevedo/Desktop/ALU/shift_left.sv}
 vlog -sv -work work +incdir+C:/Users/kevin\ Avevedo/Desktop/ALU {C:/Users/kevin Avevedo/Desktop/ALU/op_sum.sv}

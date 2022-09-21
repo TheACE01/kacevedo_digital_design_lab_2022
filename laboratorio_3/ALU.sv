@@ -32,6 +32,7 @@ module ALU #(parameter P = 4)
 	input [3:0] OP;
 	output N, Z, C, V;
 	output [P-1:0] S;
+	
 	reg [P-1:0] res, add_res, sub_res, shift_right_res, shift_left_res;
 	reg [P-1:0] and_res, or_res, xor_res, mul_res, div_res, mod_res;
 	

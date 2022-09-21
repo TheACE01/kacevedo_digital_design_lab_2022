@@ -10,23 +10,23 @@ cModel Technology
 Z0 dC:/Users/kevin Avevedo/Desktop/ALU/simulation/modelsim
 vALU
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1663748723
+Z2 !s110 1663788173
 !i10b 1
-!s100 6MT:<ZYd3n4O9aLPk?5nY0
-I]k<VmS]Ajoj^9f>UB?PPX3
+!s100 zMgOcKSK]BUg;?gG7lA0]1
+I9DohhahYAF_EbY2I]9ST=1
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 !s105 ALU_sv_unit
 S1
 R0
-w1663748695
+w1663788081
 8C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv
 FC:/Users/kevin Avevedo/Desktop/ALU/ALU.sv
-L0 21
+L0 28
 Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1663748723.000000
+Z5 !s108 1663788172.000000
 !s107 C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin Avevedo/Desktop/ALU|C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv|
 !i113 1
@@ -52,7 +52,7 @@ R4
 r1
 !s85 0
 31
-R5
+!s108 1663788173.000000
 !s107 C:/Users/kevin Avevedo/Desktop/ALU/ALU_tb.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin Avevedo/Desktop/ALU|C:/Users/kevin Avevedo/Desktop/ALU/ALU_tb.sv|
 !i113 1
@@ -62,7 +62,7 @@ R8
 n@a@l@u_tb
 vmultiplier
 R1
-Z9 !s110 1663748722
+Z9 !s110 1663788172
 !i10b 1
 !s100 YA]CeJ72bSlM?V7_6o:iQ3
 IM7fCRJlFmK5ME3T[Y2kmi0
@@ -78,7 +78,7 @@ R4
 r1
 !s85 0
 31
-Z10 !s108 1663748722.000000
+R5
 !s107 C:/Users/kevin Avevedo/Desktop/ALU/multiplier.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin Avevedo/Desktop/ALU|C:/Users/kevin Avevedo/Desktop/ALU/multiplier.sv|
 !i113 1
@@ -103,7 +103,7 @@ R4
 r1
 !s85 0
 31
-R10
+R5
 !s107 C:/Users/kevin Avevedo/Desktop/ALU/op_and.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin Avevedo/Desktop/ALU|C:/Users/kevin Avevedo/Desktop/ALU/op_and.sv|
 !i113 1
@@ -128,7 +128,7 @@ R4
 r1
 !s85 0
 31
-R10
+R5
 !s107 C:/Users/kevin Avevedo/Desktop/ALU/op_div.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin Avevedo/Desktop/ALU|C:/Users/kevin Avevedo/Desktop/ALU/op_div.sv|
 !i113 1
@@ -137,7 +137,7 @@ R7
 R8
 vop_mod
 R1
-R9
+Z10 !s110 1663788171
 !i10b 1
 !s100 CE]T4;KUni0=ISM88=?mK2
 I<1Yn>inhPZJ0dKKAW=Yli0
@@ -153,7 +153,7 @@ R4
 r1
 !s85 0
 31
-R10
+Z11 !s108 1663788171.000000
 !s107 C:/Users/kevin Avevedo/Desktop/ALU/op_mod.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin Avevedo/Desktop/ALU|C:/Users/kevin Avevedo/Desktop/ALU/op_mod.sv|
 !i113 1
@@ -162,7 +162,7 @@ R7
 R8
 vop_or
 R1
-R2
+R9
 !i10b 1
 !s100 ckZLN=gMElZNFT6i`zM;42
 InSXY6=F<ZNoSGCjbXOMS;3
@@ -178,7 +178,7 @@ R4
 r1
 !s85 0
 31
-R10
+R5
 !s107 C:/Users/kevin Avevedo/Desktop/ALU/op_or.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin Avevedo/Desktop/ALU|C:/Users/kevin Avevedo/Desktop/ALU/op_or.sv|
 !i113 1
@@ -187,7 +187,7 @@ R7
 R8
 vop_sub
 R1
-R9
+R10
 !i10b 1
 !s100 znnM=dkYg;;f5ag^S[CBA0
 IO0WgeXTj>M;6j7WDW1_i_0
@@ -203,7 +203,7 @@ R4
 r1
 !s85 0
 31
-R10
+R11
 !s107 C:/Users/kevin Avevedo/Desktop/ALU/op_sub.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin Avevedo/Desktop/ALU|C:/Users/kevin Avevedo/Desktop/ALU/op_sub.sv|
 !i113 1
@@ -212,7 +212,7 @@ R7
 R8
 vop_sum
 R1
-R9
+R10
 !i10b 1
 !s100 TaGEOaD93>3fD49J_OSKI1
 IBZ6lUzS@lI`j_:W]EFEoC0
@@ -228,7 +228,7 @@ R4
 r1
 !s85 0
 31
-R10
+R11
 !s107 C:/Users/kevin Avevedo/Desktop/ALU/op_sum.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin Avevedo/Desktop/ALU|C:/Users/kevin Avevedo/Desktop/ALU/op_sum.sv|
 !i113 1
@@ -237,7 +237,7 @@ R7
 R8
 vop_xor
 R1
-R2
+R9
 !i10b 1
 !s100 U3C_G^:@DJMIJdHT4;iSZ2
 I=K=WQeinVXJSZN1al>>S72
@@ -262,7 +262,7 @@ R7
 R8
 vshift_left
 R1
-R9
+R10
 !i10b 1
 !s100 XQ;?@6E:l6IE[U[[LggHg3
 IJ254HbCBijb]3`3AV=e4R2
@@ -278,7 +278,7 @@ R4
 r1
 !s85 0
 31
-R10
+R11
 !s107 C:/Users/kevin Avevedo/Desktop/ALU/shift_left.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin Avevedo/Desktop/ALU|C:/Users/kevin Avevedo/Desktop/ALU/shift_left.sv|
 !i113 1
@@ -287,7 +287,7 @@ R7
 R8
 vshift_right
 R1
-R9
+R10
 !i10b 1
 !s100 iBVCOm_f>:lY3YYIYUa7Q2
 I60JaZZ^FMSkVMB2FdPLnb1
@@ -303,7 +303,7 @@ R4
 r1
 !s85 0
 31
-R10
+!s108 1663788170.000000
 !s107 C:/Users/kevin Avevedo/Desktop/ALU/shift_right.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin Avevedo/Desktop/ALU|C:/Users/kevin Avevedo/Desktop/ALU/shift_right.sv|
 !i113 1

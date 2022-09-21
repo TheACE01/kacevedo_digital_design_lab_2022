@@ -1,5 +1,5 @@
-Analysis & Synthesis report for ALU2
-Wed Sep 21 03:45:43 2022
+Analysis & Elaboration report for ALU2
+Wed Sep 21 13:22:07 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -7,31 +7,22 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. Analysis & Synthesis DSP Block Usage Summary
-  9. General Register Statistics
- 10. Parameter Settings for User Entity Instance: ALU:alu
- 11. Parameter Settings for User Entity Instance: ALU:alu|op_sum:suma
- 12. Parameter Settings for User Entity Instance: ALU:alu|op_sub:resta
- 13. Parameter Settings for User Entity Instance: ALU:alu|shift_right:derecha
- 14. Parameter Settings for User Entity Instance: ALU:alu|shift_left:isquierda
- 15. Parameter Settings for User Entity Instance: ALU:alu|op_and:andM
- 16. Parameter Settings for User Entity Instance: ALU:alu|op_or:orM
- 17. Parameter Settings for User Entity Instance: ALU:alu|op_xor:xorM
- 18. Parameter Settings for User Entity Instance: ALU:alu|multiplier:multi
- 19. Parameter Settings for User Entity Instance: ALU:alu|op_div:divi
- 20. Parameter Settings for User Entity Instance: ALU:alu|op_mod:modul
- 21. Parameter Settings for Inferred Entity Instance: ALU:alu|op_div:divi|lpm_divide:Div0
- 22. Parameter Settings for Inferred Entity Instance: ALU:alu|op_mod:modul|lpm_divide:Mod0
- 23. Port Connectivity Checks: "ALU:alu|op_sum:suma"
- 24. Post-Synthesis Netlist Statistics for Top Partition
- 25. Elapsed Time Per Partition
- 26. Analysis & Synthesis Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: Top-level Entity: |ALU
+  5. Parameter Settings for User Entity Instance: op_sum:suma
+  6. Parameter Settings for User Entity Instance: op_sub:resta
+  7. Parameter Settings for User Entity Instance: shift_right:derecha
+  8. Parameter Settings for User Entity Instance: shift_left:isquierda
+  9. Parameter Settings for User Entity Instance: op_and:andM
+ 10. Parameter Settings for User Entity Instance: op_or:orM
+ 11. Parameter Settings for User Entity Instance: op_xor:xorM
+ 12. Parameter Settings for User Entity Instance: multiplier:multi
+ 13. Parameter Settings for User Entity Instance: op_div:divi
+ 14. Parameter Settings for User Entity Instance: op_mod:modul
+ 15. Analysis & Elaboration Settings
+ 16. Port Connectivity Checks: "op_sum:suma"
+ 17. Analysis & Elaboration Messages
 
 
 
@@ -54,36 +45,157 @@ refer to the applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Sep 21 03:45:43 2022       ;
-; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name                   ; ALU2                                        ;
-; Top-level Entity Name           ; ALU_FPGA                                    ;
-; Family                          ; Cyclone V                                   ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 23                                          ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 1                                           ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
-+---------------------------------+---------------------------------------------+
++-----------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                              ;
++-------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Wed Sep 21 13:22:07 2022       ;
+; Quartus Prime Version         ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                 ; ALU2                                        ;
+; Top-level Entity Name         ; ALU                                         ;
+; Family                        ; Cyclone V                                   ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
+; Total registers               ; N/A until Partition Merge                   ;
+; Total pins                    ; N/A until Partition Merge                   ;
+; Total virtual pins            ; N/A until Partition Merge                   ;
+; Total block memory bits       ; N/A until Partition Merge                   ;
+; Total PLLs                    ; N/A until Partition Merge                   ;
+; Total DLLs                    ; N/A until Partition Merge                   ;
++-------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |ALU ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; P              ; 4     ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: op_sum:suma ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; N              ; 4     ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: op_sub:resta ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; N              ; 4     ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: shift_right:derecha ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; N              ; 4     ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: shift_left:isquierda ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; N              ; 4     ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: op_and:andM ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; N              ; 4     ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: op_or:orM ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; N              ; 4     ; Signed Integer                ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: op_xor:xorM ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; N              ; 4     ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: multiplier:multi ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; N              ; 4     ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: op_div:divi ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; N              ; 4     ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: op_mod:modul ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; N              ; 4     ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                             ;
+; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; ALU_FPGA           ; ALU2               ;
+; Top-level entity name                                                           ; ALU                ; ALU2               ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -164,290 +276,8 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                   ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                               ; Library ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
-; display_hex.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/kevin Avevedo/Desktop/ALU/display_hex.sv                          ;         ;
-; ALU_FPGA.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/kevin Avevedo/Desktop/ALU/ALU_FPGA.sv                             ;         ;
-; shift_right.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/kevin Avevedo/Desktop/ALU/shift_right.sv                          ;         ;
-; shift_left.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/kevin Avevedo/Desktop/ALU/shift_left.sv                           ;         ;
-; op_sum.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/kevin Avevedo/Desktop/ALU/op_sum.sv                               ;         ;
-; op_sub.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/kevin Avevedo/Desktop/ALU/op_sub.sv                               ;         ;
-; op_mod.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/kevin Avevedo/Desktop/ALU/op_mod.sv                               ;         ;
-; op_div.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/kevin Avevedo/Desktop/ALU/op_div.sv                               ;         ;
-; multiplier.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/kevin Avevedo/Desktop/ALU/multiplier.sv                           ;         ;
-; op_and.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/kevin Avevedo/Desktop/ALU/op_and.sv                               ;         ;
-; op_or.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/kevin Avevedo/Desktop/ALU/op_or.sv                                ;         ;
-; op_xor.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/kevin Avevedo/Desktop/ALU/op_xor.sv                               ;         ;
-; ALU.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv                                  ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
-; aglobal181.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc      ;         ;
-; db/lpm_divide_1am.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/kevin Avevedo/Desktop/ALU/db/lpm_divide_1am.tdf                   ;         ;
-; db/sign_div_unsign_7kh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/kevin Avevedo/Desktop/ALU/db/sign_div_unsign_7kh.tdf              ;         ;
-; db/alt_u_div_kse.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/kevin Avevedo/Desktop/ALU/db/alt_u_div_kse.tdf                    ;         ;
-; db/lpm_divide_42m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/kevin Avevedo/Desktop/ALU/db/lpm_divide_42m.tdf                   ;         ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
-
-
-+----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary              ;
-+---------------------------------------------+------------+
-; Resource                                    ; Usage      ;
-+---------------------------------------------+------------+
-; Estimate of Logic utilization (ALMs needed) ; 55         ;
-;                                             ;            ;
-; Combinational ALUT usage for logic          ; 97         ;
-;     -- 7 input functions                    ; 3          ;
-;     -- 6 input functions                    ; 9          ;
-;     -- 5 input functions                    ; 18         ;
-;     -- 4 input functions                    ; 27         ;
-;     -- <=3 input functions                  ; 40         ;
-;                                             ;            ;
-; Dedicated logic registers                   ; 0          ;
-;                                             ;            ;
-; I/O pins                                    ; 23         ;
-;                                             ;            ;
-; Total DSP Blocks                            ; 1          ;
-;                                             ;            ;
-; Maximum fan-out node                        ; B[3]~input ;
-; Maximum fan-out                             ; 29         ;
-; Total fan-out                               ; 409        ;
-; Average fan-out                             ; 2.84       ;
-+---------------------------------------------+------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                         ;
-+----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                            ; Entity Name         ; Library Name ;
-+----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |ALU_FPGA                                    ; 97 (0)              ; 0 (0)                     ; 0                 ; 1          ; 23   ; 0            ; |ALU_FPGA                                                                                                                      ; ALU_FPGA            ; work         ;
-;    |ALU:alu|                                 ; 90 (25)             ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |ALU_FPGA|ALU:alu                                                                                                              ; ALU                 ; work         ;
-;       |multiplier:multi|                     ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |ALU_FPGA|ALU:alu|multiplier:multi                                                                                             ; multiplier          ; work         ;
-;       |op_div:divi|                          ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU_FPGA|ALU:alu|op_div:divi                                                                                                  ; op_div              ; work         ;
-;          |lpm_divide:Div0|                   ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU_FPGA|ALU:alu|op_div:divi|lpm_divide:Div0                                                                                  ; lpm_divide          ; work         ;
-;             |lpm_divide_1am:auto_generated|  ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU_FPGA|ALU:alu|op_div:divi|lpm_divide:Div0|lpm_divide_1am:auto_generated                                                    ; lpm_divide_1am      ; work         ;
-;                |sign_div_unsign_7kh:divider| ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU_FPGA|ALU:alu|op_div:divi|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider                        ; sign_div_unsign_7kh ; work         ;
-;                   |alt_u_div_kse:divider|    ; 22 (22)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU_FPGA|ALU:alu|op_div:divi|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider  ; alt_u_div_kse       ; work         ;
-;       |op_mod:modul|                         ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU_FPGA|ALU:alu|op_mod:modul                                                                                                 ; op_mod              ; work         ;
-;          |lpm_divide:Mod0|                   ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU_FPGA|ALU:alu|op_mod:modul|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
-;             |lpm_divide_42m:auto_generated|  ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU_FPGA|ALU:alu|op_mod:modul|lpm_divide:Mod0|lpm_divide_42m:auto_generated                                                   ; lpm_divide_42m      ; work         ;
-;                |sign_div_unsign_7kh:divider| ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU_FPGA|ALU:alu|op_mod:modul|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider                       ; sign_div_unsign_7kh ; work         ;
-;                   |alt_u_div_kse:divider|    ; 22 (22)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU_FPGA|ALU:alu|op_mod:modul|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider ; alt_u_div_kse       ; work         ;
-;       |op_sub:resta|                         ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU_FPGA|ALU:alu|op_sub:resta                                                                                                 ; op_sub              ; work         ;
-;       |op_sum:suma|                          ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU_FPGA|ALU:alu|op_sum:suma                                                                                                  ; op_sum              ; work         ;
-;       |shift_left:isquierda|                 ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU_FPGA|ALU:alu|shift_left:isquierda                                                                                         ; shift_left          ; work         ;
-;       |shift_right:derecha|                  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU_FPGA|ALU:alu|shift_right:derecha                                                                                          ; shift_right         ; work         ;
-;    |display_hex:display|                     ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU_FPGA|display_hex:display                                                                                                  ; display_hex         ; work         ;
-+----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-----------------------------------------------+
-; Analysis & Synthesis DSP Block Usage Summary  ;
-+---------------------------------+-------------+
-; Statistic                       ; Number Used ;
-+---------------------------------+-------------+
-; Independent 9x9                 ; 1           ;
-; Total number of DSP blocks      ; 1           ;
-;                                 ;             ;
-; Fixed Point Unsigned Multiplier ; 1           ;
-+---------------------------------+-------------+
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU:alu ;
-+----------------+-------+-----------------------------+
-; Parameter Name ; Value ; Type                        ;
-+----------------+-------+-----------------------------+
-; P              ; 4     ; Signed Integer              ;
-+----------------+-------+-----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU:alu|op_sum:suma ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; N              ; 4     ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU:alu|op_sub:resta ;
-+----------------+-------+------------------------------------------+
-; Parameter Name ; Value ; Type                                     ;
-+----------------+-------+------------------------------------------+
-; N              ; 4     ; Signed Integer                           ;
-+----------------+-------+------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU:alu|shift_right:derecha ;
-+----------------+-------+-------------------------------------------------+
-; Parameter Name ; Value ; Type                                            ;
-+----------------+-------+-------------------------------------------------+
-; N              ; 4     ; Signed Integer                                  ;
-+----------------+-------+-------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU:alu|shift_left:isquierda ;
-+----------------+-------+--------------------------------------------------+
-; Parameter Name ; Value ; Type                                             ;
-+----------------+-------+--------------------------------------------------+
-; N              ; 4     ; Signed Integer                                   ;
-+----------------+-------+--------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU:alu|op_and:andM ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; N              ; 4     ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU:alu|op_or:orM ;
-+----------------+-------+---------------------------------------+
-; Parameter Name ; Value ; Type                                  ;
-+----------------+-------+---------------------------------------+
-; N              ; 4     ; Signed Integer                        ;
-+----------------+-------+---------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU:alu|op_xor:xorM ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; N              ; 4     ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU:alu|multiplier:multi ;
-+----------------+-------+----------------------------------------------+
-; Parameter Name ; Value ; Type                                         ;
-+----------------+-------+----------------------------------------------+
-; N              ; 4     ; Signed Integer                               ;
-+----------------+-------+----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU:alu|op_div:divi ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; N              ; 4     ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU:alu|op_mod:modul ;
-+----------------+-------+------------------------------------------+
-; Parameter Name ; Value ; Type                                     ;
-+----------------+-------+------------------------------------------+
-; N              ; 4     ; Signed Integer                           ;
-+----------------+-------+------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: ALU:alu|op_div:divi|lpm_divide:Div0 ;
-+------------------------+----------------+--------------------------------------------+
-; Parameter Name         ; Value          ; Type                                       ;
-+------------------------+----------------+--------------------------------------------+
-; LPM_WIDTHN             ; 4              ; Untyped                                    ;
-; LPM_WIDTHD             ; 4              ; Untyped                                    ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                    ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                    ;
-; LPM_PIPELINE           ; 0              ; Untyped                                    ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                    ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                    ;
-; CBXI_PARAMETER         ; lpm_divide_1am ; Untyped                                    ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                    ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                    ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                 ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                               ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                               ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                             ;
-+------------------------+----------------+--------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: ALU:alu|op_mod:modul|lpm_divide:Mod0 ;
-+------------------------+----------------+---------------------------------------------+
-; Parameter Name         ; Value          ; Type                                        ;
-+------------------------+----------------+---------------------------------------------+
-; LPM_WIDTHN             ; 4              ; Untyped                                     ;
-; LPM_WIDTHD             ; 4              ; Untyped                                     ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                     ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                     ;
-; LPM_PIPELINE           ; 0              ; Untyped                                     ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                     ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                     ;
-; CBXI_PARAMETER         ; lpm_divide_42m ; Untyped                                     ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                     ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                     ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                  ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                              ;
-+------------------------+----------------+---------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALU:alu|op_sum:suma"                                                                                                                                                                  ;
+; Port Connectivity Checks: "op_sum:suma"                                                                                                                                                                          ;
 +----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port     ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -456,54 +286,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 98                          ;
-;     arith             ; 12                          ;
-;         0 data inputs ; 4                           ;
-;         2 data inputs ; 2                           ;
-;         5 data inputs ; 6                           ;
-;     extend            ; 3                           ;
-;         7 data inputs ; 3                           ;
-;     normal            ; 55                          ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 8                           ;
-;         4 data inputs ; 21                          ;
-;         5 data inputs ; 12                          ;
-;         6 data inputs ; 9                           ;
-;     shared            ; 28                          ;
-;         0 data inputs ; 8                           ;
-;         2 data inputs ; 14                          ;
-;         4 data inputs ; 6                           ;
-; arriav_mac            ; 1                           ;
-; boundary_port         ; 23                          ;
-;                       ;                             ;
-; Max LUT depth         ; 10.50                       ;
-; Average LUT depth     ; 7.90                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:03     ;
-+----------------+--------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
+Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Sep 21 03:45:14 2022
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU2 -c ALU2
+    Info: Processing started: Wed Sep 21 13:21:27 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU2 -c ALU2 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file display_hex.sv
@@ -554,66 +344,33 @@ Info (12021): Found 1 design units, including 1 entities, in source file op_xor_
     Info (12023): Found entity 1: op_xor_tb File: C:/Users/kevin Avevedo/Desktop/ALU/op_xor_tb.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
     Info (12023): Found entity 1: ALU File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 28
-Info (12127): Elaborating entity "ALU_FPGA" for the top level hierarchy
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu" File: C:/Users/kevin Avevedo/Desktop/ALU/ALU_FPGA.sv Line: 8
-Warning (10235): Verilog HDL Always Construct warning at ALU.sv(85): variable "OP" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 85
-Warning (10235): Verilog HDL Always Construct warning at ALU.sv(86): variable "add_res" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 86
-Warning (10235): Verilog HDL Always Construct warning at ALU.sv(88): variable "sub_res" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 88
-Warning (10235): Verilog HDL Always Construct warning at ALU.sv(90): variable "shift_right_res" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 90
-Warning (10235): Verilog HDL Always Construct warning at ALU.sv(92): variable "shift_left_res" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 92
-Warning (10235): Verilog HDL Always Construct warning at ALU.sv(94): variable "and_res" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 94
-Warning (10235): Verilog HDL Always Construct warning at ALU.sv(96): variable "or_res" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 96
-Warning (10235): Verilog HDL Always Construct warning at ALU.sv(98): variable "xor_res" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 98
-Warning (10235): Verilog HDL Always Construct warning at ALU.sv(100): variable "mul_res" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 100
-Warning (10235): Verilog HDL Always Construct warning at ALU.sv(102): variable "div_res" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 102
-Warning (10235): Verilog HDL Always Construct warning at ALU.sv(104): variable "mod_res" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 104
-Info (12128): Elaborating entity "op_sum" for hierarchy "ALU:alu|op_sum:suma" File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 42
-Info (12128): Elaborating entity "op_sub" for hierarchy "ALU:alu|op_sub:resta" File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 45
-Info (12128): Elaborating entity "shift_right" for hierarchy "ALU:alu|shift_right:derecha" File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 48
-Info (12128): Elaborating entity "shift_left" for hierarchy "ALU:alu|shift_left:isquierda" File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 51
-Info (12128): Elaborating entity "op_and" for hierarchy "ALU:alu|op_and:andM" File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 54
-Info (12128): Elaborating entity "op_or" for hierarchy "ALU:alu|op_or:orM" File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 57
-Info (12128): Elaborating entity "op_xor" for hierarchy "ALU:alu|op_xor:xorM" File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 60
-Info (12128): Elaborating entity "multiplier" for hierarchy "ALU:alu|multiplier:multi" File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 63
-Info (12128): Elaborating entity "op_div" for hierarchy "ALU:alu|op_div:divi" File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 66
-Info (12128): Elaborating entity "op_mod" for hierarchy "ALU:alu|op_mod:modul" File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 69
-Info (12128): Elaborating entity "display_hex" for hierarchy "display_hex:display" File: C:/Users/kevin Avevedo/Desktop/ALU/ALU_FPGA.sv Line: 10
-Info (278001): Inferred 2 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "ALU:alu|op_div:divi|Div0" File: C:/Users/kevin Avevedo/Desktop/ALU/op_div.sv Line: 5
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "ALU:alu|op_mod:modul|Mod0" File: C:/Users/kevin Avevedo/Desktop/ALU/op_mod.sv Line: 5
-Info (12130): Elaborated megafunction instantiation "ALU:alu|op_div:divi|lpm_divide:Div0" File: C:/Users/kevin Avevedo/Desktop/ALU/op_div.sv Line: 5
-Info (12133): Instantiated megafunction "ALU:alu|op_div:divi|lpm_divide:Div0" with the following parameter: File: C:/Users/kevin Avevedo/Desktop/ALU/op_div.sv Line: 5
-    Info (12134): Parameter "LPM_WIDTHN" = "4"
-    Info (12134): Parameter "LPM_WIDTHD" = "4"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_1am.tdf
-    Info (12023): Found entity 1: lpm_divide_1am File: C:/Users/kevin Avevedo/Desktop/ALU/db/lpm_divide_1am.tdf Line: 24
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_7kh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_7kh File: C:/Users/kevin Avevedo/Desktop/ALU/db/sign_div_unsign_7kh.tdf Line: 24
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_kse.tdf
-    Info (12023): Found entity 1: alt_u_div_kse File: C:/Users/kevin Avevedo/Desktop/ALU/db/alt_u_div_kse.tdf Line: 22
-Info (12130): Elaborated megafunction instantiation "ALU:alu|op_mod:modul|lpm_divide:Mod0" File: C:/Users/kevin Avevedo/Desktop/ALU/op_mod.sv Line: 5
-Info (12133): Instantiated megafunction "ALU:alu|op_mod:modul|lpm_divide:Mod0" with the following parameter: File: C:/Users/kevin Avevedo/Desktop/ALU/op_mod.sv Line: 5
-    Info (12134): Parameter "LPM_WIDTHN" = "4"
-    Info (12134): Parameter "LPM_WIDTHD" = "4"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_42m.tdf
-    Info (12023): Found entity 1: lpm_divide_42m File: C:/Users/kevin Avevedo/Desktop/ALU/db/lpm_divide_42m.tdf Line: 24
+Info (12127): Elaborating entity "ALU" for the top level hierarchy
+Warning (10235): Verilog HDL Always Construct warning at ALU.sv(86): variable "OP" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 86
+Warning (10235): Verilog HDL Always Construct warning at ALU.sv(87): variable "add_res" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 87
+Warning (10235): Verilog HDL Always Construct warning at ALU.sv(89): variable "sub_res" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 89
+Warning (10235): Verilog HDL Always Construct warning at ALU.sv(91): variable "shift_right_res" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 91
+Warning (10235): Verilog HDL Always Construct warning at ALU.sv(93): variable "shift_left_res" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 93
+Warning (10235): Verilog HDL Always Construct warning at ALU.sv(95): variable "and_res" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 95
+Warning (10235): Verilog HDL Always Construct warning at ALU.sv(97): variable "or_res" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 97
+Warning (10235): Verilog HDL Always Construct warning at ALU.sv(99): variable "xor_res" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 99
+Warning (10235): Verilog HDL Always Construct warning at ALU.sv(101): variable "mul_res" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 101
+Warning (10235): Verilog HDL Always Construct warning at ALU.sv(103): variable "div_res" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 103
+Warning (10235): Verilog HDL Always Construct warning at ALU.sv(105): variable "mod_res" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 105
+Info (12128): Elaborating entity "op_sum" for hierarchy "op_sum:suma" File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 43
+Info (12128): Elaborating entity "op_sub" for hierarchy "op_sub:resta" File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 46
+Info (12128): Elaborating entity "shift_right" for hierarchy "shift_right:derecha" File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 49
+Info (12128): Elaborating entity "shift_left" for hierarchy "shift_left:isquierda" File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 52
+Info (12128): Elaborating entity "op_and" for hierarchy "op_and:andM" File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 55
+Info (12128): Elaborating entity "op_or" for hierarchy "op_or:orM" File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 58
+Info (12128): Elaborating entity "op_xor" for hierarchy "op_xor:xorM" File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 61
+Info (12128): Elaborating entity "multiplier" for hierarchy "multiplier:multi" File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 64
+Info (12128): Elaborating entity "op_div" for hierarchy "op_div:divi" File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 67
+Info (12128): Elaborating entity "op_mod" for hierarchy "op_mod:modul" File: C:/Users/kevin Avevedo/Desktop/ALU/ALU.sv Line: 70
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 121 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 12 input pins
-    Info (21059): Implemented 11 output pins
-    Info (21061): Implemented 97 logic cells
-    Info (21062): Implemented 1 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 4807 megabytes
-    Info: Processing ended: Wed Sep 21 03:45:43 2022
-    Info: Elapsed time: 00:00:29
-    Info: Total CPU time (on all processors): 00:00:44
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 13 warnings
+    Info: Peak virtual memory: 4780 megabytes
+    Info: Processing ended: Wed Sep 21 13:22:07 2022
+    Info: Elapsed time: 00:00:40
+    Info: Total CPU time (on all processors): 00:00:40
 
 
