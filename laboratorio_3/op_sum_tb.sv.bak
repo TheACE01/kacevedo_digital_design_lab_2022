@@ -1,0 +1,39 @@
+`timescale 1ns / 1ps
+module sum_n_bit_tb();
+	parameter N = 6;
+	// Definiendo las variables que se necesitan para probar el módulo
+	logic [N-1:0] A, B, Z;
+	logic c_in, c_out;
+	
+	sum_n_bit #(.N(N)) uut(.A(A), .B(B), .c_in(c_in), .Z(Z), .c_out(c_out));
+	// Creando un bloque de código que permita cambiar valores lógicos
+	initial begin
+		// Probando para distintas combinaciones en la entarda
+		a = 6'b110010;
+		b = 6'b101010;
+		c_in = 0;
+		//01011100
+		
+		#5 // Retardo manual de 5 unidades de tiempo
+		
+		a = 6'b001111;
+		b = 6'b010110;
+		//0100101
+		
+		#5
+		
+		a = 6'b111111;
+		b = 6'b001011;
+		//01001010
+		
+		#5
+		
+		a = 6'b111010;
+		b = 6'b111111;
+		//01111001
+		
+		#5;
+
+	end
+endmodule
+	

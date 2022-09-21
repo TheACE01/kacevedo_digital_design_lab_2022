@@ -1,0 +1,38 @@
+`timescale 1ns / 1ps
+module op_sub_tb();
+	parameter N = 6;
+	// Definiendo las variables que se necesitan para probar el módulo
+	logic [N-1:0] a, b, z;
+	logic c_out;
+	
+	sub_n_bit #(.N(N)) uut(.a(a), .b(b), .z(z), .c_out(c_out));
+	// Creando un bloque de código que permita cambiar valores lógicos
+	initial begin
+		// Probando para distintas combinaciones en la entarda
+		a = 6'b110010;
+		b = 6'b101010;
+		//001000
+		
+		#5 // Retardo manual de 5 unidades de tiempo
+		
+		a = 6'b001111;
+		b = 6'b010110;
+		//111001
+		
+		#5
+		
+		a = 6'b111111;
+		b = 6'b001011;
+		//110100
+		
+		#5
+		
+		a = 6'b111010;
+		b = 6'b111111;
+		//111011
+		
+		#5;
+
+	end
+endmodule
+	
