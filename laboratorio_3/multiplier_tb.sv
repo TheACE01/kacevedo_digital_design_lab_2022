@@ -6,7 +6,7 @@ module multiplier_tb();
 	// Defining the instance signals
 	parameter N = 4;
 	logic [N-1:0] A, B;
-	logic [(2*N)-1:0] S;
+	logic [N-1:0] Z;
 
 
 	// Instance of the Unit Under Test (UUD)

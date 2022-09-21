@@ -1,8 +1,6 @@
 /*
-
 Module: AND Operation
 Description: This module performs AND operation for N-bit inputs.
-
 */
 
 module op_and #(parameter N = 4)(A, B, Z);
@@ -13,4 +11,3 @@ module op_and #(parameter N = 4)(A, B, Z);
 	assign Z = A & B;
 	
 endmodule
-	

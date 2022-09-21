@@ -7,7 +7,6 @@ module multiplier_tb();
 	parameter N = 4;
 	logic [N-1:0] A, B;
 	logic [(2*N)-1:0] S;
-	logic O;
 
 
 	// Instance of the Unit Under Test (UUD)

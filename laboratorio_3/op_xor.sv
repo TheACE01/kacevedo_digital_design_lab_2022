@@ -1,8 +1,7 @@
-/*
 
+/*
 Module: XOR Operation
 Description: This module performs XOR operation for N-bit inputs.
-
 */
 
 module op_xor #(parameter N = 4)(A, B, Z);
@@ -13,4 +12,3 @@ module op_xor #(parameter N = 4)(A, B, Z);
 	assign Z = A ^ B;
 	
 endmodule
-	

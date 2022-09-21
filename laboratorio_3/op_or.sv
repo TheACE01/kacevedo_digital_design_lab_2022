@@ -1,8 +1,6 @@
 /*
-
 Module: OR Operation
 Description: This module performs OR operation for N-bit inputs.
-
 */
 
 module op_or #(parameter N = 4)(A, B, Z);
@@ -13,4 +11,3 @@ module op_or #(parameter N = 4)(A, B, Z);
 	assign Z = A | B;
 	
 endmodule
-	
