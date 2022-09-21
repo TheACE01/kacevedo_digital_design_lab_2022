@@ -1,0 +1,60 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3/simulation/modelsim
+vop_xor
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1663731185
+!i10b 1
+!s100 b26[F0fjG0:0oZDIk8>AX2
+Il:^eENN2JbF]HB2UM:Z>@1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 op_xor_sv_unit
+S1
+R0
+w1663731100
+8C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3/op_xor.sv
+FC:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3/op_xor.sv
+L0 8
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1663731185.000000
+!s107 C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3/op_xor.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3|C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3/op_xor.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work {+incdir+C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3}
+Z8 tCvgOpt 0
+vop_xor_tb
+R1
+R2
+!i10b 1
+!s100 agKOel:ab@EMPXHG_GF?k2
+IRM2kVa<4^I;HIDBfG2b8A1
+R3
+!s105 op_xor_tb_sv_unit
+S1
+R0
+w1663731129
+8C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3/op_xor_tb.sv
+FC:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3/op_xor_tb.sv
+L0 4
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3/op_xor_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3|C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3/op_xor_tb.sv|
+!i113 1
+R6
+R7
+R8

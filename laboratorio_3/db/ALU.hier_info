@@ -1,0 +1,15 @@
+|op_xor
+A[0] => Z.IN0
+A[1] => Z.IN0
+A[2] => Z.IN0
+A[3] => Z.IN0
+B[0] => Z.IN1
+B[1] => Z.IN1
+B[2] => Z.IN1
+B[3] => Z.IN1
+Z[0] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+Z[1] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+Z[2] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+Z[3] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+
+
