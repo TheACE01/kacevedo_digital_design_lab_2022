@@ -1,5 +1,5 @@
 Flow report for ALU
-Tue Sep 20 21:32:57 2022
+Tue Sep 20 22:06:18 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,10 +40,10 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Flow Summary                                                              ;
 +-----------------------------+---------------------------------------------+
-; Flow Status                 ; Successful - Tue Sep 20 21:32:57 2022       ;
+; Flow Status                 ; Successful - Tue Sep 20 22:06:18 2022       ;
 ; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name               ; ALU                                         ;
-; Top-level Entity Name       ; op_xor                                      ;
+; Top-level Entity Name       ; substract                                   ;
 ; Family                      ; Cyclone V                                   ;
 ; Device                      ; 5CGXFC7C7F23C8                              ;
 ; Timing Models               ; Final                                       ;
@@ -62,7 +62,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/20/2022 21:32:44 ;
+; Start date & time ; 09/20/2022 22:06:04 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ALU                 ;
 +-------------------+---------------------+
@@ -73,33 +73,37 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 66325080384851.166373116301840         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 66325080384851.166373316305536         ; --            ; --          ; --             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; substract_tb   ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; op_xor_tb      ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; op_and_tb      ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; op_or_tb       ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; op_xor_tb                              ; --            ; --          ; eda_simulation ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; substract_tb                           ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --          ; --             ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                  ; substract_tb.sv                        ; --            ; --          ; substract_tb   ;
 ; EDA_TEST_BENCH_FILE                  ; op_xor_tb.sv                           ; --            ; --          ; op_xor_tb      ;
 ; EDA_TEST_BENCH_FILE                  ; op_and_tb.sv                           ; --            ; --          ; op_and_tb      ;
 ; EDA_TEST_BENCH_FILE                  ; op_or_tb.sv                            ; --            ; --          ; op_or_tb       ;
+; EDA_TEST_BENCH_MODULE_NAME           ; substract_tb                           ; --            ; --          ; substract_tb   ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; op_xor_tb                              ; --            ; --          ; op_xor_tb      ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; op_and_tb                              ; --            ; --          ; op_and_tb      ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; op_or_tb                               ; --            ; --          ; op_or_tb       ;
 ; EDA_TEST_BENCH_NAME                  ; op_and_tb                              ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_NAME                  ; op_or_tb                               ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_NAME                  ; op_xor_tb                              ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; substract_tb                           ; --            ; --          ; eda_simulation ;
 ; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation ;
 ; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --             ;
-; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; op_xor      ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; op_xor      ; Top            ;
-; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; op_xor      ; Top            ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; substract   ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; substract   ; Top            ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; substract   ; Top            ;
 ; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --          ; --             ;
 ; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                     ; op_xor                                 ; ALU           ; --          ; --             ;
+; TOP_LEVEL_ENTITY                     ; substract                              ; ALU           ; --          ; --             ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 
 
@@ -108,8 +112,8 @@ refer to the applicable agreement for further details.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:14     ; 1.0                     ; 4768 MB             ; 00:00:33                           ;
-; Total                  ; 00:00:14     ; --                      ; --                  ; 00:00:33                           ;
+; Analysis & Elaboration ; 00:00:15     ; 1.0                     ; 4767 MB             ; 00:00:34                           ;
+; Total                  ; 00:00:15     ; --                      ; --                  ; 00:00:34                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

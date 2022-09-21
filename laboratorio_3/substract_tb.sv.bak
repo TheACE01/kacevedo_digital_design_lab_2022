@@ -1,7 +1,7 @@
 // This is the testbench module for testing the N bit multiplier
 
 `timescale 1ns / 1ps
-module multiplier_tb();
+module substract_tb();
 
 	// Defining the instance signals
 	parameter N = 4;
@@ -10,7 +10,7 @@ module multiplier_tb();
 
 
 	// Instance of the Unit Under Test (UUD)
-	multiplier #(.N(N)) uut(
+	substract #(.N(N)) uut(
 	.A(A),
 	.B(B),
 	.Z(Z));

@@ -8,53 +8,53 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3/simulation/modelsim
-vop_xor
+vsubstract
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1663731185
+!s110 1663733185
 !i10b 1
-!s100 b26[F0fjG0:0oZDIk8>AX2
-Il:^eENN2JbF]HB2UM:Z>@1
-Z3 VDg1SIo80bB@j0V0VzS_@n1
-!s105 op_xor_sv_unit
+!s100 a`BLd2;Li81QO9^[@K3GC2
+INNEAi[=HTfgkm7^<cWh>D3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 substract_sv_unit
 S1
 R0
-w1663731100
-8C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3/op_xor.sv
-FC:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3/op_xor.sv
+w1663732797
+8C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3/substract.sv
+FC:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3/substract.sv
 L0 8
-Z4 OV;L;10.5b;63
+Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1663731185.000000
-!s107 C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3/op_xor.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3|C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3/op_xor.sv|
+!s108 1663733185.000000
+!s107 C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3/substract.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3|C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3/substract.sv|
 !i113 1
-Z6 o-sv -work work
-Z7 !s92 -sv -work work {+incdir+C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3}
-Z8 tCvgOpt 0
-vop_xor_tb
+Z4 o-sv -work work
+Z5 !s92 -sv -work work {+incdir+C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3}
+Z6 tCvgOpt 0
+vsubstract_tb
 R1
-R2
+!s110 1663733186
 !i10b 1
-!s100 agKOel:ab@EMPXHG_GF?k2
-IRM2kVa<4^I;HIDBfG2b8A1
-R3
-!s105 op_xor_tb_sv_unit
+!s100 6fTHTA@F<5VeVhn^LF3KN2
+IQhjQLXo6MKcHog1o;XF3?0
+R2
+!s105 substract_tb_sv_unit
 S1
 R0
-w1663731129
-8C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3/op_xor_tb.sv
-FC:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3/op_xor_tb.sv
+w1663733084
+8C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3/substract_tb.sv
+FC:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3/substract_tb.sv
 L0 4
-R4
+R3
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3/op_xor_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3|C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3/op_xor_tb.sv|
+!s108 1663733186.000000
+!s107 C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3/substract_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3|C:/Users/kevin Avevedo/Desktop/Repositorios/GitHub/kacevedo_digital_design_lab_2022/laboratorio_3/substract_tb.sv|
 !i113 1
+R4
+R5
 R6
-R7
-R8

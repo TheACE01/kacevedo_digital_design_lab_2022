@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Tue Sep 20 21:32:57 2022
+Analysis & Elaboration Status : Successful - Tue Sep 20 22:06:18 2022
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : ALU
-Top-level Entity Name : op_xor
+Top-level Entity Name : substract
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge
