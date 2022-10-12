@@ -14,7 +14,16 @@ module SnakeCE(
 
 	// Wire for the Horizontal and Vertical counter
 	logic [9:0] DrawX, DrawY;
+	
+	// Wire for the RGB VGA colors
+	logic [7:0] R, G, B;
 
+	// Wire to the Display area signal
+	logic video_on;
+	
+	// Wire for node checkpoint detection
+	logic checkpoint_on;
+	
 	// Create an instance for the clock divider
 	vga_clk clk_divider(.inclk0(clk_50), .c0(VGA_CLK));
 	
@@ -23,16 +32,29 @@ module SnakeCE(
 	VGA_Controller VGA(.Clk(clk_50), .Reset(1'b0), .VGA_HS(VGA_HS), .VGA_VS(VGA_VS),      
 									.VGA_CLK(VGA_CLK),     
 									.VGA_BLANK_N(VGA_BLANK_N), 
-									 .VGA_SYNC_N(VGA_SYNC_N),                               
+									.VGA_SYNC_N(VGA_SYNC_N),
+									.video_on(video_on),
 									.DrawX(DrawX),       
 									.DrawY(DrawY)      
 									);
 								
-						
-	// only output the colors if the counters are within the adressable video time constraints
-	assign VGA_R = (DrawX < 640 && DrawY < 480) ? 8'hFF : 8'h00;
-	assign VGA_B = (DrawX < 640 && DrawY < 480) ? 8'h00 : 8'h00;
-	assign VGA_G = (DrawX < 640 && DrawY < 480) ? 8'hFF : 8'h00;	
+	// Create an instance for the Entity Generator					
+	entity_generator EG(
+									.clk(clk_50),                            
+									.reset(1'b0),                          
+									.video_on(video_on),                  
+									.x(DrawX),
+									.y(DrawY),             
+									.R(R) ,
+									.G(G),
+									.B(B),
+									.checkpoint_on(checkpoint_on)
+									);
+
+	// Define the VGA RBG color values
+	assign VGA_R = R;
+	assign VGA_G = G;
+	assign VGA_B = B;
 								
 endmodule	
     
