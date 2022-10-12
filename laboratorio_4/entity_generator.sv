@@ -62,12 +62,51 @@ module entity_generator(
     assign sq_y_b = sq_y_t + SQUARE_SIZE - 1;   // bottom boundary
 	
     
-    // Snake Paint Status
+    // Snake Paint Map
     logic sq_on;
     assign sq_on = (sq_x_l <= x) && (x <= sq_x_r) &&
                    (sq_y_t <= y) && (y <= sq_y_b);
-                   
-    // new square position
+						 
+	// Horizontal lines Paint Map
+	logic row_1;
+	assign row_1 = (x >= 0 && x <= X_MAX && y >= 79 && y <= 81);
+	
+	logic row_2;
+	assign row_2 = (x >= 0 && x <= X_MAX && y >= 159 && y <= 161);
+     
+	logic row_3;
+	assign row_3 = (x >= 0 && x <= X_MAX && y >= 239 && y <= 241);
+
+	logic row_4;
+	assign row_4 = (x >= 0 && x <= X_MAX && y >= 319 && y <= 321);
+
+	logic row_5;
+	assign row_5 = (x >= 0 && x <= X_MAX && y >= 399 && y <= 401);	
+	
+	// Vertical lines Paint Map
+	logic col_1;
+	assign col_1 = (x >= 79 && x <= 81 && y >= 0 && y <= Y_MAX);	
+	
+	logic col_2;
+	assign col_2 = (x >= 159 && x <= 161 && y >= 0 && y <= Y_MAX);
+	
+	logic col_3;
+	assign col_3 = (x >= 239 && x <= 241 && y >= 0 && y <= Y_MAX);
+	
+	logic col_4;
+	assign col_4 = (x >= 319 && x <= 321 && y >= 0 && y <= Y_MAX);
+	
+	logic col_5;
+	assign col_5 = (x >= 399 && x <= 401 && y >= 0 && y <= Y_MAX);
+	
+	logic col_6;
+	assign col_6 = (x >= 479 && x <= 481 && y >= 0 && y <= Y_MAX);
+	
+	logic col_7;
+	assign col_7 = (x >= 559 && x <= 561 && y >= 0 && y <= Y_MAX);
+	
+	
+   // new square position
     assign sq_x_next = (refresh_tick) ? sq_x_reg + x_delta_reg : sq_x_reg;
     assign sq_y_next = (refresh_tick) ? sq_y_reg + y_delta_reg : sq_y_reg;
     
@@ -346,9 +385,19 @@ module entity_generator(
     always_comb 
         if(~video_on)
             {R, G, B} = 24'h000000;          // black(no value) outside display area
-        else
-            if(sq_on)
-                {R, G, B} = SQ_RGB;       // snake color
+				
+				// PAINT SNAKE
+				else if(sq_on)
+                {R, G, B} = SQ_RGB; 
+					 
+				// PAINT ROWS
+				else if (row_1 || row_2 || row_3 || row_4 || row_5)
+					{R, G, B} = 24'h000000; 
+					
+				// PAINT ROWS
+				else if (col_1 || col_2 || col_3 || col_4 || col_5 || col_6 || col_7)
+					{R, G, B} = 24'h000000; 
+
             else
                 {R, G, B}= BG_RGB;       // blue background
     
