@@ -43,7 +43,7 @@ module SnakeCE(
 	logic Up, Down, Left, Right;
 	
 	// Create an instance for the Entity Generator					
-	entity_generator EG(
+	snake_controller EG(
 									.clk(clk_50),                            
 									.reset(1'b0),                          
 									.video_on(video_on),                  
