@@ -1,5 +1,9 @@
 module SnakeCE(
 	input logic clk_50,
+								key_up,
+								key_down,
+								key_right,
+								key_left,
 	
 	// VGA Interface 
 	output logic [7:0]  VGA_R,        //VGA Red
@@ -21,9 +25,6 @@ module SnakeCE(
 	// Wire to the Display area signal
 	logic video_on;
 	
-	// Wire for node checkpoint detection
-	logic checkpoint_on;
-	
 	// Create an instance for the clock divider
 	vga_clk clk_divider(.inclk0(clk_50), .c0(VGA_CLK));
 	
@@ -37,24 +38,45 @@ module SnakeCE(
 									.DrawX(DrawX),       
 									.DrawY(DrawY)      
 									);
-								
+			
+	// Wires for the entity controller from key controller
+	logic Up, Down, Left, Right;
+	
 	// Create an instance for the Entity Generator					
 	entity_generator EG(
 									.clk(clk_50),                            
 									.reset(1'b0),                          
 									.video_on(video_on),                  
 									.x(DrawX),
-									.y(DrawY),             
+									.y(DrawY),  
+								   .Up(Up) ,
+									.Down(Down),
+									.Right(Right),
+									.Left(Left),									
 									.R(R) ,
 									.G(G),
 									.B(B),
-									.checkpoint_on(checkpoint_on)
 									);
+								
 
 	// Define the VGA RBG color values
 	assign VGA_R = R;
 	assign VGA_G = G;
 	assign VGA_B = B;
-								
+
+	
+	// Create an instance for the key controller
+	key_controller KC(
+								.clk(clk_50),                            
+								.reset(1'b0),                         
+								.key_up(key_up),
+								.key_down(key_down),
+								.key_right(key_right),
+								.key_left(key_left),
+								.Up(Up) ,
+								.Down(Down),
+								.Right(Right),
+								.Left(Left)
+								);
 endmodule	
     
