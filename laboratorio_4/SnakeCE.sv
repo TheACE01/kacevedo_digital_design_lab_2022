@@ -39,18 +39,25 @@ module SnakeCE(
 	// Wires for the entity controller from key controller
 	logic Up, Down, Left, Right;
 	logic enable_snake_paint [63:0];
+	logic enable_food_paint;
 	
 	// Create an instance for the Entity Generator					
 	entity_controller EG(
 									.clk(clk_50),                            
-									.reset(1'b0),                                        
+									.reset(1'b0), 
+									.enable_stage(1'b1),
 									.x(DrawX),
-									.y(DrawY),  
+									.y(DrawY),
+									.sx(10'd128),
+									.sy(10'd224),
+									.fx(10'd512),
+									.fy(10'd448),
 								   .Up(Up) ,
 									.Down(Down),
 									.Right(Right),
 									.Left(Left),
-									.enable_snake_paint(enable_snake_paint)
+									.enable_snake_paint(enable_snake_paint),
+									.enable_food_paint(enable_food_paint)
 									);
 								
 	// Wire for the RGB VGA colors
@@ -58,9 +65,11 @@ module SnakeCE(
 
 	paint_controller PC(
 									.video_on(video_on), 
+									.stage(1'b1),
 									.x(DrawX),
 									.y(DrawY),  
 									.enable_snake_paint(enable_snake_paint),
+									.enable_food_paint(enable_food_paint),
 									.R(R) ,
 									.G(G), 
 									.B(B)
@@ -70,8 +79,7 @@ module SnakeCE(
 	assign VGA_R = R;
 	assign VGA_G = G;
 	assign VGA_B = B;
-
-	
+	 
 	// Create an instance for the key controller
 	key_controller KC(
 								.clk(clk_50),                            
