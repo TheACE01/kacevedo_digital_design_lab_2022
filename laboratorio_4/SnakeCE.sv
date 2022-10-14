@@ -18,9 +18,6 @@ module SnakeCE(
 
 	// Wire for the Horizontal and Vertical counter
 	logic [9:0] DrawX, DrawY;
-	
-	// Wire for the RGB VGA colors
-	logic [7:0] R, G, B;
 
 	// Wire to the Display area signal
 	logic video_on;
@@ -41,24 +38,34 @@ module SnakeCE(
 			
 	// Wires for the entity controller from key controller
 	logic Up, Down, Left, Right;
+	logic enable_snake_paint [63:0];
 	
 	// Create an instance for the Entity Generator					
-	snake_controller EG(
+	entity_controller EG(
 									.clk(clk_50),                            
-									.reset(1'b0),                          
-									.video_on(video_on),                  
+									.reset(1'b0),                                        
 									.x(DrawX),
 									.y(DrawY),  
 								   .Up(Up) ,
 									.Down(Down),
 									.Right(Right),
-									.Left(Left),									
-									.R(R) ,
-									.G(G),
-									.B(B),
+									.Left(Left),
+									.enable_snake_paint(enable_snake_paint)
 									);
 								
+	// Wire for the RGB VGA colors
+	logic [7:0] R, G, B;	
 
+	paint_controller PC(
+									.video_on(video_on), 
+									.x(DrawX),
+									.y(DrawY),  
+									.enable_snake_paint(enable_snake_paint),
+									.R(R) ,
+									.G(G), 
+									.B(B)
+									);
+									
 	// Define the VGA RBG color values
 	assign VGA_R = R;
 	assign VGA_G = G;
