@@ -40,12 +40,13 @@ module paint_controller(
 			
 			// In case the stage signal is ON
 			else if (stage) begin	
-			  if (enable_snake_paint[5:0]) 	{R, G, B} = SNAKE_RGB;
+			  if (enable_snake_paint[63:0]) 	{R, G, B} = SNAKE_RGB;
 			  else if (enable_food_paint) 	{R, G, B} = FOOD_RGB;
 			  else if (horizontal_lines[15:0]) {R, G, B} = 24'h000000; 
 			  else if (vertical_lines[20:0]) {R, G, B} = 24'h000000; 
 			  else {R, G, B}= BG_RGB; 
 			end
+			
 			// In case the stage signal is OFF
 			else begin
 				{R, G, B}= BG_RGB;
