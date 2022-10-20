@@ -22,8 +22,8 @@ module entity_controller(
     parameter X_MAX = 639;                            
     parameter Y_MAX = 479;                                      
 	 parameter SQUARE_SIZE = 32;
-	 parameter update_time_m1 = 26'd20000000;
-	 parameter update_time_m2 = 26'd10000000;
+	 parameter update_time_m1 = 26'd10000000;
+	 parameter update_time_m2 = 26'd8000000;
 	 logic tick_time;
 	 
 	// MAP SNAKE HEAD AND BODY ON SCREEN
@@ -34,7 +34,7 @@ module entity_controller(
     logic [9:0] snake_y [63:0];
 	genvar k;
 	generate        
-		for (k = 0; k < 1 ; k++) begin:srp      
+		for (k = 0; k < 64 ; k++) begin:srp      
 		  assign snake_on[k] = (snake_x[k] + 1 <= x)
 													&& (x <= snake_x[k] + SQUARE_SIZE -1) 
 													&& (snake_y[k] + 1 <= y)
@@ -53,7 +53,7 @@ module entity_controller(
 	 logic [25:0] tick_counter;
 	 
 	 // FOOD COLLISION DETECTION SIGNAL
-	 assign food_collision = (snake_x[0] == fx && snake_y[0] == fy && tick_time);
+	 assign food_collision = (snake_x[0] == fx && snake_y[0] == fy);
 	
 
    // UPDATE THE TICK COUNTER
@@ -90,6 +90,7 @@ module entity_controller(
 
 		  
 	// SNAKE HEAD CONTROL
+	integer c;
     always_ff @(posedge clk) begin
         if(reset)  begin
                 snake_x[0] <= sx;
@@ -119,17 +120,22 @@ module entity_controller(
 					if (snake_x[0] < 0 || snake_x[0] > X_MAX || snake_y[0] < 0 || snake_y[0] > Y_MAX) begin
 							game_over <= 1;
 					end
+					else begin
+						for (c = 1; c < snake_parts; c = c +1) begin
+							if (snake_x[0] == snake_x[c] && snake_y[0] == snake_y[c]) game_over <= 1;
+				end
+					end
 				end
 			end
 		  end
 
     // SNAKE BODY CONTROL
 	 integer l, m;
-    always@(posedge clk) begin
+    always_ff @(posedge clk) begin
         if(reset) begin
-				for (l = 1; l < snake_parts; l = l +1) begin
-					snake_x[l] <= 10'd0;
-					snake_y[l] <= 10'd0;
+				for (l = 1; l < 64; l = l +1) begin
+					snake_x[l] <= 640;
+					snake_y[l] <= 480;
 				end
         end
 		  

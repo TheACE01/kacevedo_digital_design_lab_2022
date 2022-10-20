@@ -29,7 +29,7 @@ module FSM_machine(input clk, rst, dificultad_normal, dificultad_dificil, food_c
 		
 
 	//output logic
-	assign stage = (state == 2'b11) ? 1 : 0;
+	assign stage = (state == 2'b00) ? 0 : 1;
 	assign en_s = (state == 2'b01) ? 1 : 0;
 	assign rst_game = (state == 2'b01) ? 1 : 0;
 	assign en_f = (state == 2'b10) ? 1 : 0;

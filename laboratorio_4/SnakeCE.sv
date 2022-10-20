@@ -29,7 +29,10 @@ module SnakeCE(
 	logic enable_random_food;
 
 	//logic [9:0] sx, sy;
-	//logic [9:0] fx, fy;
+	logic [9:0] fx, fy;
+	
+	logic [4:0] rand_x, rand_y;
+	logic eq_x, eq_y;
 	
 	logic reset_game;
 	logic stage;
@@ -53,12 +56,19 @@ FSM_machine FSM(
 									.stage(stage),
 									.difficulty(difficulty)
 									);
-	
 	counter SC(.clk(clk_50), .rst(reset_game), .en_f(enable_score), .score(score));
+									
+	comparator comp_x(.Current(rand_x), .Max(5'b10011), .Eq(eq_x));
+	counter pos_x(.clk(clk_50),  .rst(reset_game | eq_x),  .en_f(1'b1), .score(rand_x));
+	
+	comparator comp_y(.Current(rand_y), .Max(5'b01110), .Eq(eq_y));
+	counter pos_y(.clk(clk_50),  .rst(reset_game | eq_y),  .en_f(1'b1), .score(rand_y));
+	
+	
 	
 	//random_pos RS(.clk(clk_50), .en(enable_random_snake), .pos_x(sx), .pos_y(sy));
 
-	//random_pos RF(.clk(clk_50), .en(enable_random_food), .pos_x(fx), .pos_y(fy));
+	random_pos RF(.clk(clk_50), .en(enable_random_food), .count_x(rand_x), .count_y(rand_y), .pos_x(fx), .pos_y(fy));
 	
 	// Create an instance for the clock divider
 	vga_clk clk_divider(.inclk0(clk_50), .c0(VGA_CLK));
@@ -89,8 +99,8 @@ FSM_machine FSM(
 									.y(DrawY),
 									.sx(160),
 									.sy(160),
-									.fx(320),
-									.fy(320),
+									.fx(fx),
+									.fy(fy),
 								   .Up(Up) ,
 									.Down(Down),
 									.Right(Right),

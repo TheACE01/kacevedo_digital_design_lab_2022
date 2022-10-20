@@ -34,7 +34,7 @@ module paint_controller(
 	
 	 
 	 // CONTROL RENDER TIMES
-    always @* begin
+    always_comb begin
         if(~video_on)
             {R, G, B} = 24'h000000; 
 			
