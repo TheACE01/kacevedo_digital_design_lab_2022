@@ -114,6 +114,8 @@ FSM_machine FSM(
 								
 	// Wire for the RGB VGA colors
 	logic [7:0] R, G, B;	
+	
+
 
 	paint_controller PC(
 									.video_on(video_on), 
