@@ -23,7 +23,7 @@ module entity_controller(
     parameter Y_MAX = 479;                                      
 	 parameter SQUARE_SIZE = 32;
 	 parameter update_time_m1 = 26'd10000000;
-	 parameter update_time_m2 = 26'd8000000;
+	 parameter update_time_m2 = 26'd7000000;
 	 logic tick_time;
 	 
 	// MAP SNAKE HEAD AND BODY ON SCREEN
@@ -122,7 +122,10 @@ module entity_controller(
 					end
 					else begin
 						for (c = 1; c < snake_parts; c = c +1) begin
-							if (snake_x[0] == snake_x[c] && snake_y[0] == snake_y[c]) game_over <= 1;
+							if (snake_x[0] == snake_x[c] && snake_y[0] == snake_y[c]) begin
+								game_over <= 1;
+								break;
+							end
 				end
 					end
 				end

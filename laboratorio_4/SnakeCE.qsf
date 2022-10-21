@@ -100,4 +100,21 @@ set_global_assignment -name SYSTEMVERILOG_FILE FSM_machine.sv
 set_global_assignment -name SYSTEMVERILOG_FILE random_pos.sv
 set_global_assignment -name SYSTEMVERILOG_FILE comparator.sv
 set_global_assignment -name SYSTEMVERILOG_FILE counter.sv
+set_global_assignment -name SYSTEMVERILOG_FILE display_hex.sv
+set_global_assignment -name SYSTEMVERILOG_FILE score_decoder.sv
+set_location_assignment PIN_AE26 -to Display0[6]
+set_location_assignment PIN_AE27 -to Display0[5]
+set_location_assignment PIN_AE28 -to Display0[4]
+set_location_assignment PIN_AG27 -to Display0[3]
+set_location_assignment PIN_AF28 -to Display0[2]
+set_location_assignment PIN_AG28 -to Display0[1]
+set_location_assignment PIN_AH28 -to Display0[0]
+set_location_assignment PIN_AJ29 -to Display1[6]
+set_location_assignment PIN_AH29 -to Display1[5]
+set_location_assignment PIN_AH30 -to Display1[4]
+set_location_assignment PIN_AG30 -to Display1[3]
+set_location_assignment PIN_AF29 -to Display1[2]
+set_location_assignment PIN_AF30 -to Display1[1]
+set_location_assignment PIN_AD27 -to Display1[0]
+set_location_assignment PIN_AB12 -to reset
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
