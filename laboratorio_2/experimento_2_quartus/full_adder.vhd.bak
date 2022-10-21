@@ -1,0 +1,34 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity full_adder is
+port(
+	FA, FB: in STD_LOGIC;
+	FS, FCA: out STD_LOGIC);
+end full_adder;
+
+architecture structural of full_Adder is
+
+component half_adder is
+port( 
+	A, B: in STD_LOGIC;
+	S, C: out STD_LOGIC);
+end component;
+
+component orgate is
+port(
+	X, Y: in STD_LOGIC;
+	Z: out STD_LOGIC);
+end component;
+
+signal S0, S1, S2: STD_LOGIC;
+
+begin
+U1: half_adder port map(A => FA, B => FB, S => S0, C => S1);
+U2: half_adder port map(A => S0, B => FC, S => FS, C => S2);
+U3: orgate port map(X => S2, Y => S1, Z => FCA);
+end structural;
+
+

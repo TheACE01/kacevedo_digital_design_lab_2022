@@ -1,0 +1,33 @@
+module register #(parameter N = 4)(
+	input clk, rst,
+	input [1:0] ,
+	input InHaciaDerecha, InHaciaIzquierda,
+	input [ANCHO-1:0] EntradaParalela,
+	output reg [ANCHO-1:0] Salida
+);
+
+reg [ANCHO-1:0]state,next_state;
+parameter MEMORIA=2'b00,CORREDERECHA=2'b01;
+parameter CORREIZQUIERDA=2'b10, CARGAPARALELA=2'b11; 
+//memoria
+always @(posedge clk) begin
+	if(!rst) state<=0;
+	else state<=next_state;
+end
+
+//siguiente estado
+always @(*) begin
+	case(Control)
+		MEMORIA: next_state=state; //memoria, se mantiene el dato
+		CORREDERECHA: next_state={InHaciaDerecha,state[ANCHO-1:1]};
+		CORREIZQUIERDA: next_state={state[ANCHO-2:0],InHaciaIzquierda};
+		CARGAPARALELA: next_state=EntradaParalela;
+	endcase
+end
+
+//salidas
+always @(*) begin
+	Salida=state;
+end
+
+endmodule

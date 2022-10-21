@@ -1,0 +1,88 @@
+|binario_display
+A3 => A3.IN1
+A2 => A2.IN1
+A1 => A1.IN1
+A0 => A0.IN1
+A << display_hex:U2.A
+B << display_hex:U2.B
+C << display_hex:U2.C
+D << display_hex:U2.D
+E << display_hex:U2.E
+F << display_hex:U2.F
+G << display_hex:U2.G
+
+
+|binario_display|deco_binario_bcd:U1
+A3 => S4.IN0
+A3 => S4.IN0
+A3 => S3.IN0
+A3 => S2.IN0
+A3 => S1.IN0
+A2 => S4.IN1
+A2 => S2.IN1
+A2 => S2.IN0
+A2 => S3.IN1
+A1 => S4.IN1
+A1 => S2.IN1
+A1 => S1.IN1
+A1 => S3.IN1
+A1 => S1.IN1
+A0 => S0.DATAIN
+S4 <= S4.DB_MAX_OUTPUT_PORT_TYPE
+S3 <= S3.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= S2.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= S1.DB_MAX_OUTPUT_PORT_TYPE
+S0 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|binario_display|display_hex:U2
+A3 => A.IN0
+A3 => A.IN0
+A3 => B.IN0
+A3 => A.IN0
+A3 => A.IN0
+A3 => E.IN0
+A3 => F.IN0
+A2 => A.IN1
+A2 => A.IN1
+A2 => B.IN0
+A2 => A.IN1
+A2 => A.IN1
+A2 => E.IN0
+A1 => A.IN1
+A1 => B.IN1
+A1 => B.IN1
+A1 => C.IN1
+A1 => C.IN1
+A1 => F.IN1
+A1 => G.IN1
+A1 => A.IN1
+A1 => A.IN1
+A1 => A.IN1
+A1 => E.IN1
+A0 => A.IN1
+A0 => A.IN1
+A0 => A.IN1
+A0 => B.IN1
+A0 => B.IN1
+A0 => D.IN1
+A0 => E.IN1
+A0 => E.IN1
+A0 => F.IN1
+A0 => F.IN1
+A0 => G.IN1
+A0 => A.IN1
+A0 => B.IN1
+A0 => B.IN1
+A0 => C.IN1
+A0 => D.IN1
+A0 => G.IN1
+A <= A.DB_MAX_OUTPUT_PORT_TYPE
+B <= B.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
+
+

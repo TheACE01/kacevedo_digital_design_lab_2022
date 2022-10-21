@@ -1,0 +1,196 @@
+|ALU
+A[0] => A[0].IN10
+A[1] => A[1].IN10
+A[2] => A[2].IN10
+A[3] => A[3].IN10
+B[0] => B[0].IN10
+B[1] => B[1].IN10
+B[2] => B[2].IN10
+B[3] => B[3].IN10
+OP[0] => Mux0.IN9
+OP[0] => Mux1.IN9
+OP[0] => Mux2.IN9
+OP[0] => Mux3.IN9
+OP[0] => Equal0.IN31
+OP[0] => Equal1.IN0
+OP[1] => Mux0.IN8
+OP[1] => Mux1.IN8
+OP[1] => Mux2.IN8
+OP[1] => Mux3.IN8
+OP[1] => Equal0.IN30
+OP[1] => Equal1.IN31
+OP[2] => Mux0.IN7
+OP[2] => Mux1.IN7
+OP[2] => Mux2.IN7
+OP[2] => Mux3.IN7
+OP[2] => Equal0.IN29
+OP[2] => Equal1.IN30
+OP[3] => Mux0.IN6
+OP[3] => Mux1.IN6
+OP[3] => Mux2.IN6
+OP[3] => Mux3.IN6
+OP[3] => Equal0.IN28
+OP[3] => Equal1.IN29
+S[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+N <= N.DB_MAX_OUTPUT_PORT_TYPE
+Z <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+V <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|op_sum:suma
+A[0] => _.DATAD
+A[1] => _.DATAD
+A[2] => _.DATAD
+A[3] => _.DATAD
+B[0] => _.DATAC
+B[1] => _.DATAC
+B[2] => _.DATAC
+B[3] => _.DATAC
+c_in => _.DATAB
+Z[0] <= _.SUM_OUT
+Z[1] <= _.SUM_OUT
+Z[2] <= _.SUM_OUT
+Z[3] <= _.SUM_OUT
+c_out <= _.SUM_OUT
+
+
+|ALU|op_sub:resta
+A[0] => Add0.IN8
+A[1] => Add0.IN7
+A[2] => Add0.IN6
+A[3] => Add0.IN5
+B[0] => Add0.IN4
+B[1] => Add0.IN3
+B[2] => Add0.IN2
+B[3] => Add0.IN1
+Z[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+Z[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+Z[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+Z[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|shift_right:derecha
+A[0] => ShiftRight0.IN4
+A[1] => ShiftRight0.IN3
+A[2] => ShiftRight0.IN2
+A[3] => ShiftRight0.IN1
+B[0] => ShiftRight0.IN8
+B[1] => ShiftRight0.IN7
+B[2] => ShiftRight0.IN6
+B[3] => ShiftRight0.IN5
+Z[0] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+Z[1] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+Z[2] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+Z[3] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|shift_left:isquierda
+A[0] => ShiftLeft0.IN4
+A[1] => ShiftLeft0.IN3
+A[2] => ShiftLeft0.IN2
+A[3] => ShiftLeft0.IN1
+B[0] => ShiftLeft0.IN8
+B[1] => ShiftLeft0.IN7
+B[2] => ShiftLeft0.IN6
+B[3] => ShiftLeft0.IN5
+Z[0] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+Z[1] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+Z[2] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+Z[3] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|op_and:andM
+A[0] => Z.IN0
+A[1] => Z.IN0
+A[2] => Z.IN0
+A[3] => Z.IN0
+B[0] => Z.IN1
+B[1] => Z.IN1
+B[2] => Z.IN1
+B[3] => Z.IN1
+Z[0] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+Z[1] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+Z[2] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+Z[3] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|op_or:orM
+A[0] => Z.IN0
+A[1] => Z.IN0
+A[2] => Z.IN0
+A[3] => Z.IN0
+B[0] => Z.IN1
+B[1] => Z.IN1
+B[2] => Z.IN1
+B[3] => Z.IN1
+Z[0] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+Z[1] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+Z[2] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+Z[3] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|op_xor:xorM
+A[0] => Z.IN0
+A[1] => Z.IN0
+A[2] => Z.IN0
+A[3] => Z.IN0
+B[0] => Z.IN1
+B[1] => Z.IN1
+B[2] => Z.IN1
+B[3] => Z.IN1
+Z[0] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+Z[1] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+Z[2] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+Z[3] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiplier:multi
+A[0] => Mult0.IN3
+A[1] => Mult0.IN2
+A[2] => Mult0.IN1
+A[3] => Mult0.IN0
+B[0] => Mult0.IN7
+B[1] => Mult0.IN6
+B[2] => Mult0.IN5
+B[3] => Mult0.IN4
+Z[0] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+Z[1] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+Z[2] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+Z[3] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|op_div:divi
+A[0] => Div0.IN3
+A[1] => Div0.IN2
+A[2] => Div0.IN1
+A[3] => Div0.IN0
+B[0] => Div0.IN7
+B[1] => Div0.IN6
+B[2] => Div0.IN5
+B[3] => Div0.IN4
+Z[0] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+Z[1] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+Z[2] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+Z[3] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|op_mod:modul
+A[0] => Mod0.IN3
+A[1] => Mod0.IN2
+A[2] => Mod0.IN1
+A[3] => Mod0.IN0
+B[0] => Mod0.IN7
+B[1] => Mod0.IN6
+B[2] => Mod0.IN5
+B[3] => Mod0.IN4
+Z[0] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+Z[1] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+Z[2] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+Z[3] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+
+
