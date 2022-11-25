@@ -1,0 +1,6 @@
+module ram_vga_counter (input clk, rst, en,output reg [15:0] Q);
+	always_ff @ (posedge clk or negedge rst) begin
+		if (!rst) Q = 16'd1;
+		else if(en) Q = Q + 1'b1;
+	end
+endmodule
